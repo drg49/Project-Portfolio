@@ -1,8 +1,8 @@
 # Project Overview
 
-**PROJECT NAME:** dfadfadfsdfadf
+**PROJECT NAME:** SEIR Project Portfolio
 
-**PROJECT AUTHOR:** lkjlkjljlkadfsd
+**PROJECT AUTHOR:** Daniel Gavin
 
 ## Project Schedule
 
@@ -22,11 +22,11 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+At the end, my project will contain all my project links, images, and 
 
 ## Google Sheet
 
-Include link to your google sheet here.  Here is the sample [Joe had used in class](https://docs.google.com/spreadsheets/d/15PmioBi2dQEkewpqI7MDkDpvcVF0Trw8vmarAQbwoHk/edit#gid=0) 
+Include link to your google sheet here.  Here is the sample [Joe had used in class](https://docs.google.com/spreadsheets/d/10vCKRW3pH7xYwJO6E_0_ufhaKcfvna8j6HUz9hPKhbA/edit#gid=0) 
 
 ## Portfolio I want to Emulate
 
@@ -34,9 +34,9 @@ Search and compare at least 3 profile web sites.  Record your findings in the ta
 
 Link To Site  | One Thing I'd Like To Incorporate | 
 | ------------- | ------------- |
-| [denisechandler.com](http://www.denisechandler.com/)| landing page animation
-|[jkeohan.com](http://jkeohan.com/) | mouseover on a project triggers animations |
-| [mattfarley.ca](http://mattfarley.ca/) |  layout of the projects
+| [denisechandler.com](https://www.dcfonts.com/)| mouseover animations on each website |
+|[jkeohan.com](https://pierre.io/) | cursors and animations |
+| [mattfarley.ca](https://mattfarley.ca/contact) |  at some point I would like to put a contact form that works so employers can reach me.
 
 ---
 
@@ -44,8 +44,9 @@ Link To Site  | One Thing I'd Like To Incorporate |
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
 
-- [Mobile](https://i.imgur.com/P3iBEZf.jpg)
-- [Desktop](https://i.imgur.com/xpOWo0E.jpg)
+- [Mobile](https://imgur.com/gallery/vbi6smu)
+- [Tablet](https://imgur.com/gallery/PTZBBSk)
+- [Desktop](https://imgur.com/gallery/vOzcxmR)
 
 Wireframing Resources:
 
@@ -55,7 +56,7 @@ Wireframing Resources:
 
 ## Time/Priority Matrix 
 
-[Link](https://res.cloudinary.com/jkeohan/image/upload/a_270/v1591621734/project1_matrix_ocy5gc_h1kg0m.jpg)
+[Link](https://imgur.com/gallery/D97UbRa)
 
 Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
 
@@ -88,38 +89,110 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
-| --- | :---: |  :---: | :---: | 
-| Hamburger | H | 1hr | hr |
-| Project Previews | H | 3hr | hr |
-| Regular Nav | H | 1hr | hr |  
-| Adding Form | H | 1.5hr|  hr | 
-| Other sections and flex| M | 3hr | hr|
+| Logo | H |  2hr | :---: | 
+| Project Previews | H | 2hr | hr |
+| Navbar and Flexbox | H | 2hr | hr |  
+| Adding Form | H | 2hr|  hr | 
+| Main section styling| M | 3hr | hr|
 | Working with API | H | 3hrs|  hr | 
-| Responsive | H | 3hr | hr | hr |
-| Social Media Icons | L | 1hr |  hr |
-| Total | H | 15.5hrs| hrs |
+| Responsive | H | 2.5hr | hr | hr |
+| Banner Image | M | 1.5hr |  hr |
+  Project Web Component | H | 3hr | hr	
+| Total | H | 21hrs| hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
-| --- | :---: |  :---: | :---: | 
-| Project Hover | L | 3hr | -hr | hr |
-| Banner letters wiggle | L | 1hr | hr |
-| Interactive Banner | M | 4hr | hr |
-| Materialize | H | 4hr | -hr | hr |
-| Bootstrap | H | 4hr | hr |
-| Make own icon | L | 4hr | hr |
-| Total | H | 20hrs| hrs |
+| Project Images | M |  2hr | :---: | 
+| Project Image Hover | L | 2hr | -hr | hr |
+| Drop-down Menu | M | 4hr | hr |
+| Descriptions | L | 3hr | -hr | hr |
+| Bootstrap | H | 3hr | hr |
+| Other icons | L | 4hr | hr |
+| Total | H | 15hrs| hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
+ I will only be using bootstrap for the CSS responsive Design, and I will also be using jQuery for DOM manipulation.
 
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
 
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
+This is a function I made a while back that changes the theme of the website to 'Dark' or 'Light'. It is very long and written in Vanilla JS. I used it in an old static website of mine.
+```JS
+function theme(x) {
+  if(x==0) {
+    document.querySelector("body").style.backgroundColor = "#e4e4e4";
+    document.querySelector("h1").style.color = "#000000";
+    document.querySelector("h1").style.borderColor = "#d1d1d1";
+    document.querySelector("h1").style.backgroundColor = "#d1d1d1";
+    document.querySelector("p").style.color = "#000000";
+    document.getElementById("greetText").style.color = "#000000";
+    document.getElementById("home").style.color = "#000000";
+    document.getElementById("home").onmouseover = function() 
+    {
+        this.style.color = "blue";
+    }
+    document.getElementById("home").onmouseleave = function() 
+    {
+        this.style.color = "#000000";
+    }
+    document.getElementById("about").style.color = "#000000";
+    document.getElementById("about").onmouseover = function() 
+    {
+        this.style.color = "blue";
+    }
+    document.getElementById("about").onmouseleave = function() 
+    {
+        this.style.color = "#000000";
+    }
+    document.getElementById("contact").style.color = "#000000";
+    document.getElementById("contact").onmouseover = function() 
+    {
+        this.style.color = "blue";
+    }
+    document.getElementById("contact").onmouseleave = function() 
+    {
+        this.style.color = "#000000";
+    }
+    document.getElementById("labelA").style.color = "#000000";
+    document.getElementById("labelB").style.color = "#000000";
+  } else if (x==1) {
+    document.querySelector("body").style.backgroundColor = "#121212";
+    document.querySelector("h1").style.color = "#00bd10";
+    document.querySelector("h1").style.borderColor = "#383838";
+    document.querySelector("h1").style.backgroundColor = "#383838";
+    document.querySelector("p").style.color = "#00e013";
+    document.getElementById("greetText").style.color = "#00e013";
+    document.getElementById("home").style.color = "#00e013";
+    document.getElementById("home").onmouseover = function() 
+    {
+        this.style.color = "blue";
+    }
+    document.getElementById("home").onmouseleave = function() 
+    {
+        this.style.color = "#00e013";
+    }
+    document.getElementById("about").style.color = "#00e013";
+    document.getElementById("about").onmouseover = function() 
+    {
+        this.style.color = "blue";
+    }
+    document.getElementById("about").onmouseleave = function() 
+    {
+        this.style.color = "#00e013";
+    }
+    document.getElementById("contact").style.color = "#00e013";
+    document.getElementById("contact").onmouseover = function() 
+    {
+        this.style.color = "blue";
+    }
+    document.getElementById("contact").onmouseleave = function() 
+    {
+        this.style.color = "#00e013";
+    }
+    document.getElementById("labelA").style.color = "#00e013";
+    document.getElementById("labelB").style.color = "#00e013";
+  }
 }
 ```
 
