@@ -3,8 +3,8 @@
 //////////////////////////////////
 // Web Components Classes Here
 //////////////////////////////////
-
-class TemplateExample extends HTMLElement {
+//PROJECT CARD COMPONENT
+class ProjectCard extends HTMLElement {
     constructor(){
         super()
 
@@ -18,4 +18,4 @@ class TemplateExample extends HTMLElement {
 // Register the HTML Tag here
 /////////////////////////////////
 
-customElements.define("template-example", TemplateExample)
+customElements.define("project-card", ProjectCard)

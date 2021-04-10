@@ -17,7 +17,10 @@ $.ajax("https://spreadsheets.google.com/feeds/list/10vCKRW3pH7xYwJO6E_0_ufhaKcfv
         }
     })
     console.log(projects)
-    //1 object represents one project
+    // projects.forEach((project) => {
+    //     console.log(project.description);
+    // })
+    
 })
 .catch((error) => {
     console.log(error);
