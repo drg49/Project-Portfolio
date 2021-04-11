@@ -4,8 +4,7 @@
 
 body {
     height: 100vh;
-    background: rgb(109,25,252);
-background: linear-gradient(0deg, rgba(109,25,252,1) 2%, rgba(125,31,165,1) 96%);
+    background-color: #1FA1B8;
 }
 
 img:hover {
@@ -18,7 +17,7 @@ img:hover {
 
 #header {
     flex-wrap: nowrap;
-    background-color: #c150ff;
+    background-color: #1FA1B8;
 }
 
 nav {
@@ -42,7 +41,7 @@ li {
 
 li:hover {
     color:#79FF7A;
-    text-shadow: 3px 3px rgb(83, 13, 148);
+    text-shadow: 3px 3px #065664;
     cursor: pointer;
 }
 
@@ -54,16 +53,20 @@ li:hover {
 
 #banner {
     flex-wrap: wrap;
+    background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
 }
 
 .col-md-4:first-of-type, .col-md-4:nth-child(2) {
-    border-right: solid 2px #6310a3;
+    border-right: solid 2px darkblue;
 }
 
 .col-md-4 {
     padding-top: 20px;
-    border-bottom: solid 2px #6310a3;
-    border-top: solid 2px #6310a3;
+    border-bottom: solid 2px darkblue;
+    border-top: solid 2px darkblue;
+    
 }
 
 #name {
@@ -92,6 +95,5 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 14px;
-    background: rgb(109,25,252);
-background: linear-gradient(0deg, rgba(109,25,252,1) 2%, rgba(125,31,165,1) 96%);
+    background-color: #1FA1B8
 }

@@ -14,10 +14,14 @@ class ProjectCard extends HTMLElement {
                 border-radius: 9px;
                 margin-top: 14px;
                 margin-bottom: 28px;
-                background-color: #c150ff;
+                background-color: #005d92;
+                background-image: linear-gradient(160deg, #005d92 0%, #007f72 100%);
             }
             .boxcard:hover {
                 box-shadow: 0 0 10px #ccc;
+            }
+            h2 {
+                color: white;
             }
             img {
                 width: 350px;
