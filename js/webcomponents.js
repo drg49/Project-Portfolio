@@ -9,6 +9,7 @@ class ProjectCard extends HTMLElement {
         <style>
             .boxcard {
                 width: 350px;
+
                 text-align: center;
                 border: 1px solid;
                 border-radius: 9px;
@@ -28,6 +29,7 @@ class ProjectCard extends HTMLElement {
             }
             p {
              margin: 0;
+             height: 168px;
              padding: 10px;
              color: white; 
              text-align: center;
@@ -35,6 +37,7 @@ class ProjectCard extends HTMLElement {
             #dropdown {
                 border-top:1px solid;
                 transition: all 0.5s;
+
             }
             #dropdown:hover .dropdown-content{
                 display: block;
@@ -42,6 +45,9 @@ class ProjectCard extends HTMLElement {
             .dropdown-content {
                 display: none;
                 padding-top: 5px;
+            }
+            .dropdown-content a {
+                color: lightblue;
             }
         </style>
         `
