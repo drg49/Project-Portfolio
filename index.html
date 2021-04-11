@@ -28,6 +28,9 @@
       type="module"
       src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.36/dist/shoelace.js"
     ></script>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- YOUR CUSTOM CODE -->
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/webcomponents.js" defer></script>
@@ -36,14 +39,38 @@
   <body>
     <!-- Header -->
     <div class="container-fluid">
-      <div class="row">
+      <div class="row" id="header">
         <div class="col-md-12">
-          <img id="logo" src="images/dgGreenLogo.png" width="95" height="95">
-          <navbar>
+          <img id="logo" src="images/dgGreenLogo.png" width="95" height="95" alt="green logo with bumblebee">
+          <nav>
             <li>Home</li>
             <li>About</li>
             <li>Contact</li>
-          </navbar>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row" id="banner">
+        <div class="col-md-4">
+          <h1></h1>
+        </div>
+        <div class="col-md-4">
+          <p>Hello there, my name is</p>
+          <h1 id="name">Daniel Gavin</h1>
+          <p>Full stack developer from Thousand Oaks, California.</p>
+        </div>
+        <div class="col-md-4">
+          
+        </div>  
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <main>
+            
+          </main>
         </div>
       </div>
     </div>

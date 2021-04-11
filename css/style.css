@@ -1,37 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
-* {
-  border: 1px solid  
+body {
+    height: 100vh;
+    background: rgb(109,25,252);
+background: linear-gradient(0deg, rgba(109,25,252,1) 2%, rgba(125,31,165,1) 96%);
+}
+
+img:hover {
+   cursor: pointer;
 }
 
 #logo {
     margin-left: 30px;
 }
 
-.row:first-of-type {
-    flex-wrap: nowrap
+#header {
+    flex-wrap: nowrap;
+    background-color: #c150ff;
 }
 
-navbar {
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 600px;
     margin-right: 25px;
+    
 }
 
 li {
     list-style: none;
     margin-right: 120px;
-    border: 1px solid;
     font-family: 'Teko', sans-serif;
     font-size: 32px;
     margin: 0 auto;
+    transition: 280ms linear;
+    color:white;
 }
 
-.col-md-12 {
+li:hover {
+    color:#79FF7A;
+    text-shadow: 3px 3px rgb(83, 13, 148);
+    cursor: pointer;
+}
+
+.col-md-12:first-of-type {
     display: flex;
     justify-content: space-between;
     padding: 0;
 }
 
+#banner {
+    flex-wrap: wrap;
+}
+
+.col-md-4:first-of-type, .col-md-4:nth-child(2) {
+    border-right: solid 2px #6310a3;
+}
+
+.col-md-4 {
+    padding-top: 20px;
+    border-bottom: solid 2px #6310a3;
+    border-top: solid 2px #6310a3;
+}
+
+#name {
+    padding-top: 10px;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(177, 177, 177));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.col-md-4 p {
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.col-md-4 p:first-of-type {
+    margin-bottom: 0;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 14px;
+    background: rgb(109,25,252);
+background: linear-gradient(0deg, rgba(109,25,252,1) 2%, rgba(125,31,165,1) 96%);
+}
