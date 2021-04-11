@@ -1,10 +1,4 @@
-// USE THIS FILE TO WRITE ANY WEB COMPONENTS, use example for reference
-
-//////////////////////////////////
-// Web Components Classes Here
-//////////////////////////////////
 //PROJECT CARD COMPONENT
-
 class ProjectCard extends HTMLElement {
     constructor(){
         super()
@@ -58,7 +52,7 @@ class ProjectCard extends HTMLElement {
         <p>${this.getAttribute("description")}</p>
         <div id="dropdown">
         <div class="dropdown-content">
-            <a>Check it out on Github</a>
+            <a href=${this.getAttribute("github")} target="blank">Check it out on Github</a>
         </div>
         <i class="fas fa-chevron-down"></i>
         </div>

@@ -19,7 +19,7 @@ $.ajax("https://spreadsheets.google.com/feeds/list/10vCKRW3pH7xYwJO6E_0_ufhaKcfv
     const $main = $("main");
     projects.forEach((project) => {
         const $div = $("<div>");
-        $div.html(`<project-card projectName="${project.projectName}" img="${project.image}" description="${project.description}"></project-card>`);
+        $div.html(`<project-card projectName="${project.projectName}" img="${project.image}" description="${project.description}" github="${project.giturl}"></project-card>`);
         $main.append($div);
     })
     
