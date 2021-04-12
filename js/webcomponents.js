@@ -9,7 +9,6 @@ class ProjectCard extends HTMLElement {
         <style>
             .boxcard {
                 width: 350px;
-
                 text-align: center;
                 border: 1px solid;
                 border-radius: 9px;
@@ -26,6 +25,8 @@ class ProjectCard extends HTMLElement {
             }
             img {
                 width: 350px;
+                height: 169px;
+                background-color: black;
             }
             p {
              margin: 0;
@@ -58,7 +59,7 @@ class ProjectCard extends HTMLElement {
         <div class="boxcard">
 
         <h2>${this.getAttribute("projectName")}</h2>
-        <img src=${this.getAttribute("img")}>
+        <a href=${this.getAttribute("liveurl")} target="blank"><img src=${this.getAttribute("img")}></a>
         <p>${this.getAttribute("description")}</p>
         <div id="dropdown">
         <div class="dropdown-content">
