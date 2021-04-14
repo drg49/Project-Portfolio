@@ -19,7 +19,7 @@ setTimeout(function typeB () {
         b++;
         setTimeout(typeB, 72);
       }
-}, 1200);
+}, 1100);
 setTimeout(function typeC () {
     if (c < txtC.length) {
         document.getElementById("full-stack").innerHTML += txtC.charAt(c);
@@ -27,12 +27,13 @@ setTimeout(function typeC () {
         setTimeout(typeC, 30);
       }
 }, 2300);
-setTimeout(function fadeA () {
-$("#links").fadeIn("");
+setTimeout(function() {
+$("#links").fadeIn("slow");
+$("#fet").fadeIn("slow");
 }, 4100)
-setTimeout(function fadeB () {
-    $("#fet").fadeIn("");
-    }, 4100)
+setTimeout(function() {
+$("#iconlist").fadeIn()
+}, 4700)
 
 ///////////////////////////////////
 // Get data from Google Sheets

@@ -119,6 +119,22 @@ main {
     background-color: #1FA1B8;
 }
 
+ul {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.icon {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#iconlist {
+    display: none;
+}
+
 @media screen and (max-width: 767px) {
     .col-md-4:first-of-type, .col-md-4:nth-child(2) {
         border-right: none;
@@ -147,7 +163,7 @@ main {
     }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     h1#name {
         font-size: 45px;
     }
