@@ -29,7 +29,7 @@ setTimeout(function typeC () {
 }, 2300);
 setTimeout(function fadeA () {
 $("#links").fadeIn("");
-}, 4400)
+}, 4100)
 
 ///////////////////////////////////
 // Get data from Google Sheets
