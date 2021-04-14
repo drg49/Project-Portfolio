@@ -33,7 +33,8 @@ $("#fet").fadeIn("slow");
 }, 4100)
 setTimeout(function() {
 $("#iconlist").fadeIn()
-}, 4700)
+$("#linkurls").fadeIn()
+}, 4500)
 
 ///////////////////////////////////
 // Get data from Google Sheets
