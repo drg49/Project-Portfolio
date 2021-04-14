@@ -127,4 +127,9 @@ main {
         order: 1;
         border-top: none;
     }
+
+    #full-stack {
+        width: 191px;
+    }
+
 }
