@@ -128,5 +128,8 @@ main {
         border-top: none;
     }
 
+    #full-stack {
+        width: 323px;
+    }
 
 }
