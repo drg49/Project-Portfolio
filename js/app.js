@@ -30,6 +30,9 @@ setTimeout(function typeC () {
 setTimeout(function fadeA () {
 $("#links").fadeIn("");
 }, 4100)
+setTimeout(function fadeB () {
+    $("#fet").fadeIn("");
+    }, 4100)
 
 ///////////////////////////////////
 // Get data from Google Sheets
