@@ -1,32 +1,35 @@
-let a = 0;
+let a = 0;  
 let b = 0;
 let c = 0;
-let txtOne = 'Hello there, my name is';
-let txtTwo = 'Daniel Gavin';
-let txtThree = 'Full stack developer from Thousand Oaks, California.'
+let txtA = 'Hello there, my name is';
+let txtB = 'Daniel Gavin';
+let txtC = 'Full stack developer from Thousand Oaks, California.';
 
-function typeWriter() {
-  if (a < txtOne.length) {
-    document.getElementById("greeting").innerHTML += txtOne.charAt(a);
+
+function typeA() {
+  if (a < txtA.length) {
+    document.getElementById("greeting").innerHTML += txtA.charAt(a);
     a++;
-    setTimeout(typeWriter, 40);
+    setTimeout(typeA, 37);
   }
 }
-setTimeout(function typeTwo () {
-    if (b < txtTwo.length) {
-        document.getElementById("name").innerHTML += txtTwo.charAt(b);
+setTimeout(function typeB () {
+    if (b < txtB.length) {
+        document.getElementById("name").innerHTML += txtB.charAt(b);
         b++;
-        setTimeout(typeTwo, 70);
+        setTimeout(typeB, 72);
       }
-}, 1320);
-setTimeout(function typeThree () {
-    if (c < txtThree.length) {
-        document.getElementById("full-stack").innerHTML += txtThree.charAt(c);
+}, 1200);
+setTimeout(function typeC () {
+    if (c < txtC.length) {
+        document.getElementById("full-stack").innerHTML += txtC.charAt(c);
         c++;
-        setTimeout(typeThree, 30);
+        setTimeout(typeC, 30);
       }
-}, 2600);
-
+}, 2300);
+setTimeout(function fadeA () {
+$("#links").fadeIn("");
+}, 4400)
 
 ///////////////////////////////////
 // Get data from Google Sheets
