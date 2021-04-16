@@ -49,6 +49,10 @@ setTimeout(function() {
     $("#github").css('display','block')
     }, 5400)
 
+function openLink (x) {
+    open("https://" + x);
+}
+
 ///////////////////////////////////
 // Get data from Google Sheets
 ///////////////////////////////////
