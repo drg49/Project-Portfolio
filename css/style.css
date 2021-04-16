@@ -152,12 +152,26 @@ ul {
     padding-right: 10px;
 }
 
+#jslogo:hover {
+    cursor: default;
+}
+
 #linkedin {
     display: none;
+    margin: 0 auto;
+}
+
+#linkedin:hover {
+    cursor: pointer;
 }
 
 #github {
     display: none;
+    margin: 0 auto;
+}
+
+#github:hover {
+    cursor: pointer;
 }
 
 #iconlist {
@@ -173,6 +187,7 @@ ul {
 }
 
 @media screen and (max-width: 1223px) {
+    /* BANNER HEIGHT */
     .col-md-2, .col-md-4, .col-md-6 {
         padding-top: 20px;
         border-bottom: solid 2px #031924;
@@ -185,6 +200,7 @@ ul {
 }
 
 @media screen and (max-width: 1091px) {
+    /* BANNER HEIGHT */
     .col-md-2, .col-md-4, .col-md-6 {
         padding-top: 20px;
         border-bottom: solid 2px #031924;
@@ -208,6 +224,11 @@ ul {
 
 /* TABLET DISPLAY */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* BANNER HEIGHT */
+    .col-md-2, .col-md-4, .col-md-6 {
+        height: 470px;
+    }
+    
     h1#name {
         font-size: 45px;
     }
@@ -267,12 +288,13 @@ ul {
     .col-md-2 {
         order: 1;
         border-top: none;
-        height: 215px;
+        height: 200px;
         padding-left: 0;
     }
     
     #links {
         padding: 0;
+        margin-bottom: 0;
         text-align: center;
         display: block;
     }
@@ -317,6 +339,7 @@ ul {
         display: block;
         width: 80px;
         height: 100px;
+
     }
     #fet {
         display: block;

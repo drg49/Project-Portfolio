@@ -5,7 +5,6 @@ let txtA = 'Hello there, my name is';
 let txtB = 'Daniel Gavin';
 let txtC = 'Full stack developer from Thousand Oaks, California.';
 
-
 function typeA() {
   if (a < txtA.length) {
     document.getElementById("greeting").innerHTML += txtA.charAt(a);
@@ -30,17 +29,24 @@ setTimeout(function typeC () {
 setTimeout(function() {
 $("#links").fadeIn("slow");
 $("#fet").fadeIn("slow");
+$("#links").attr("style", "display: block") //This is a bug patch for when you switch from mobile display to desktop.
+$("#fet").attr("style", "display: block")
 }, 4100)
 setTimeout(function() {
 $("#iconlist").fadeIn()
 $("#linkedin").fadeIn()
+$("#iconlist").attr("style", "display: flex")
+$("#linkedin").css('display','block')
 }, 4500)
 setTimeout(function() {
     $("#bet").fadeIn("slow");
+    $("#bet").attr("style", "display: block")
     }, 5000)
 setTimeout(function() {
     $("#iconlist-2").fadeIn()
     $("#github").fadeIn()
+    $("#iconlist-2").attr("style", "display: flex")
+    $("#github").css('display','block')
     }, 5400)
 
 ///////////////////////////////////
@@ -67,8 +73,7 @@ $.ajax("https://spreadsheets.google.com/feeds/list/10vCKRW3pH7xYwJO6E_0_ufhaKcfv
         $div.html(`<project-card projectName="${project.projectName}" img="${project.image}" description="${project.description}" github="${project.giturl}" liveurl="${project.liveurl}"></project-card>`);
         $main.append($div);
     })
-    
-    
+     
 })
 .catch((error) => {
     console.log(error);
