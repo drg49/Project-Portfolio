@@ -43,14 +43,6 @@ setTimeout(function() {
     $("#github").fadeIn()
     }, 5400)
 
-const mediaQuery = window.matchMedia('(max-width: 767px)')
-if (mediaQuery.matches) {
-    setTimeout(function() {
-        $("#iconlist-2").fadeIn()
-        $("#github").fadeIn()
-        }, 4500)
-  }
-
 ///////////////////////////////////
 // Get data from Google Sheets
 ///////////////////////////////////
