@@ -283,9 +283,11 @@ ul {
     #linkedin {
         padding-bottom: 20px;
         width:150px;
+        height: 100px;
     }
     #github {
         width: 80px;
+        height: 100px;
     }
 }
 
