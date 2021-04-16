@@ -8,7 +8,7 @@ body {
 }
 
 img:hover {
-   cursor: pointer;
+   cursor: default;
 }
 
 #logo {
@@ -168,6 +168,10 @@ ul {
     display: none;
 }
 
+#menu-icon {
+    display: none;
+}
+
 @media screen and (max-width: 1223px) {
     .col-md-2, .col-md-4, .col-md-6 {
         padding-top: 20px;
@@ -231,9 +235,28 @@ ul {
 
 /* MOBILE DISPLAY */
 @media screen and (max-width: 767px) {
+    img#logo{
+        margin-left: 0;
+    }
+    nav li {
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #menu-icon {
+    display: block;
+    }
+
+    #menu-icon:hover {
+        cursor: pointer;
+    }
+
     .col-md-4 {
         padding: 10px;
-        height: 210px;
+        height: 213px;
     }
     .col-md-2, .col-md-4 {
         border-right: none;
