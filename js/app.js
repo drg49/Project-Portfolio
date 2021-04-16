@@ -33,8 +33,23 @@ $("#fet").fadeIn("slow");
 }, 4100)
 setTimeout(function() {
 $("#iconlist").fadeIn()
-$("#linkurls").fadeIn()
-}, 40)
+$("#linkedin").fadeIn()
+}, 4500)
+setTimeout(function() {
+    $("#bet").fadeIn("slow");
+    }, 5000)
+setTimeout(function() {
+    $("#iconlist-2").fadeIn()
+    $("#github").fadeIn()
+    }, 5400)
+
+const mediaQuery = window.matchMedia('(max-width: 767px)')
+if (mediaQuery.matches) {
+    setTimeout(function() {
+        $("#iconlist-2").fadeIn()
+        $("#github").fadeIn()
+        }, 4500)
+  }
 
 ///////////////////////////////////
 // Get data from Google Sheets
