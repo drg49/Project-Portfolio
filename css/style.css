@@ -280,8 +280,12 @@ ul {
         margin: 0 auto;
         padding-bottom: 0;
     }
-    img#linkedin {
+    #linkedin {
         padding-bottom: 20px;
+        width:150px;
+    }
+    #github {
+        width: 80px;
     }
 }
 
