@@ -216,12 +216,6 @@ ul {
     }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1418px) {
-    #links {
-        font-size: 30px;
-    }
-}
-
 /* TABLET DISPLAY */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     /* BANNER HEIGHT */
