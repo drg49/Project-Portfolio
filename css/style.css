@@ -17,8 +17,7 @@ img:hover {
 
 #header {
     flex-wrap: nowrap;
-    background-image: url(/images/backgroundimage.png);
-    background-size: cover;
+    background-color: #1FA1B8;
 }
 
 nav {
@@ -138,8 +137,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 20px;
-    background-image: url(/images/backgroundimage.png);
-    background-size:cover
+    background-color: #1FA1B8;
 }
 
 ul {
