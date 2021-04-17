@@ -17,7 +17,8 @@ img:hover {
 
 #header {
     flex-wrap: nowrap;
-    background-color: #1FA1B8;
+    background-image: url(/images/backgroundimage.png);
+    background-size: cover;
 }
 
 nav {
@@ -137,7 +138,8 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 20px;
-    background-color: #1FA1B8;
+    background-image: url(/images/backgroundimage.png);
+    background-size:cover
 }
 
 ul {
@@ -186,6 +188,7 @@ ul {
     display: none;
 }
 
+/* DESKTOP OR HIGHER */
 @media screen and (max-width: 1223px) {
     /* BANNER HEIGHT */
     .col-md-2, .col-md-4, .col-md-6 {
@@ -218,15 +221,45 @@ ul {
 
 @media screen and (min-width: 1025px) and (max-width: 1418px) {
     #links {
-        font-size: 45px;
+        font-size: 34px;
     }
 }
 
 /* TABLET DISPLAY */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width:782px) and (max-width: 1024px) {
+    .col-md-2, .col-md-4, .col-md-6 {
+        height: 475px;
+    }
+        
+    h1#name {
+        font-size: 45px;
+    }
+
+    #links {
+        font-size: 24px;
+        padding-bottom: 50px;
+    }
+
+    #fet {
+        font-size: 30px;
+    }
+    #linkedin {
+        width: 100px;
+        padding-bottom: 50px;
+    }
+
+    #bet {
+        font-size: 30px;
+    }
+    #iconlist-2 {
+        padding-left: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 781px) {
     /* BANNER HEIGHT */
     .col-md-2, .col-md-4, .col-md-6 {
-        height: 470px;
+        height: 550px;
     }
     
     h1#name {
@@ -234,7 +267,7 @@ ul {
     }
 
     #links {
-        font-size: 33px;
+        font-size: 24px;
         padding-bottom: 50px;
     }
 
