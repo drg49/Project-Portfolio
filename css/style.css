@@ -140,6 +140,23 @@ main {
     background-color: #1FA1B8;
 }
 
+#main-heading {
+    padding-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#main-heading h3 {
+    font-family: 'Fjalla One', sans-serif;
+    color: whitesmoke;
+}
+
+#main-heading h1 {
+    font-family: 'Fjalla One', sans-serif;
+    color: whitesmoke;
+}
+
 ul {
     display: flex;
     justify-content: space-around;
