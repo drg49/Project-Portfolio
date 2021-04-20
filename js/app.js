@@ -77,7 +77,10 @@ $.ajax("https://spreadsheets.google.com/feeds/list/10vCKRW3pH7xYwJO6E_0_ufhaKcfv
         $div.html(`<project-card projectName="${project.projectName}" img="${project.image}" description="${project.description}" github="${project.giturl}" liveurl="${project.liveurl}"></project-card>`);
         $main.append($div);
     })
-     
+    //When project cards load, the rest of the content will load
+    document.getElementById("main-heading").style.display = "block"
+    document.getElementById("about-heading").style.display = "block"
+
 })
 .catch((error) => {
     console.log(error);

@@ -152,7 +152,14 @@ main {
     color: whitesmoke;
 }
 
-#main-heading h1 {
+#about-heading {
+    padding-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#about-heading h1 {
     font-family: 'Fjalla One', sans-serif;
     color: whitesmoke;
 }
@@ -200,6 +207,14 @@ ul {
 }
 
 #menu-icon {
+    display: none;
+}
+
+#main-heading {
+    display: none;
+}
+
+#about-heading {
     display: none;
 }
 
