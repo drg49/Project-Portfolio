@@ -26,7 +26,6 @@ nav {
     align-items: center;
     width: 600px;
     margin-right: 25px;
-    
 }
 
 li {
@@ -45,7 +44,7 @@ li:hover {
     cursor: pointer;
 }
 
-.col-md-12:first-of-type {
+#topbar {
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -54,60 +53,6 @@ li:hover {
 #banner {
     flex-wrap: wrap;
     background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );
-}
-
-.col-md-2, .col-md-4 {
-    border-right: solid 1px #031924;
-    text-align: center;
-}
-
-.col-md-2, .col-md-4, .col-md-6 {
-    padding-top: 20px;
-    border-bottom: solid 2px #031924;
-    border-top: solid 2px #031924;
-    height: 394px;
-}
-
-.col-md-4 {
-    padding-top: 100px;
-}
-
-#links {
-    color: white;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 50px;
-    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(177, 177, 177));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: none;
-}
-
-#fet {
-    text-align: center;
-    color: white;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 50px;
-    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(177, 177, 177));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: none;
-    padding-bottom: 10px;
-}
-
-#bet {
-    text-align: center;
-    color: white;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 50px;
-    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(177, 177, 177));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 #name {
@@ -121,15 +66,51 @@ li:hover {
     -webkit-text-fill-color: transparent;
 }
 
-.col-md-4 p {
+#banner p {
     color: white;
     font-family: 'Noto Sans', sans-serif;
 }
 
-.col-md-4 p:first-of-type {
+#banner p:first-of-type {
     margin-bottom: 0;
     font-size: 30px;
 }
+
+#links {
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(177, 177, 177));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#fet {
+    text-align: center;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(177, 177, 177));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 10px;
+}
+
+#bet {
+    text-align: center;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(177, 177, 177));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 
 main {
     width: 100%;
@@ -169,6 +150,7 @@ ul {
     justify-content: space-around;
     max-width: 100%;
     flex-wrap: wrap;
+    padding: 0px;
 }
 
 .icon {
@@ -176,12 +158,15 @@ ul {
     padding-right: 10px;
 }
 
+#iconlist {
+    margin-bottom: 53px;
+}
+
 #jslogo:hover {
     cursor: default;
 }
 
 #linkedin {
-    display: none;
     margin: 0 auto;
 }
 
@@ -190,20 +175,11 @@ ul {
 }
 
 #github {
-    display: none;
     margin: 0 auto;
 }
 
 #github:hover {
     cursor: pointer;
-}
-
-#iconlist {
-    display: none;
-}
-
-#iconlist-2 {
-    display: none;
 }
 
 #menu-icon {
@@ -218,208 +194,32 @@ ul {
     display: none;
 }
 
-/* DESKTOP OR HIGHER */
-@media screen and (max-width: 1223px) {
-    /* BANNER HEIGHT */
-    .col-md-2, .col-md-4, .col-md-6 {
-        padding-top: 20px;
-        border-bottom: solid 2px #031924;
-        border-top: solid 2px #031924;
-        height: 455px;
-    }
-    .col-md-4 {
-        padding-top: 130px;
+#tools {
+    display: none;
+}
+
+@media screen and (min-width: 1243px) {
+    #banner {
+        height: 200px
     }
 }
 
-@media screen and (max-width: 1091px) {
-    /* BANNER HEIGHT */
-    .col-md-2, .col-md-4, .col-md-6 {
-        padding-top: 20px;
-        border-bottom: solid 2px #031924;
-        border-top: solid 2px #031924;
-        height: 520px;
-    }
-    #iconlist-2 {
-        width: 325px;
-        margin: 0 auto;
-    }
-    .col-md-4 {
-        padding-top: 130px;
-    }
-}
 
-@media screen and (min-width: 1025px) and (max-width: 1418px) {
-    #links {
-        font-size: 34px;
-    }
-}
 
-/* TABLET DISPLAY */
-@media screen and (min-width:782px) and (max-width: 1024px) {
-    .col-md-2, .col-md-4, .col-md-6 {
-        height: 475px;
-    }
-        
-    h1#name {
-        font-size: 45px;
-    }
 
-    #links {
-        font-size: 24px;
-        padding-bottom: 50px;
-    }
 
-    #fet {
-        font-size: 30px;
-    }
-    #linkedin {
-        width: 100px;
-        padding-bottom: 50px;
-    }
-
-    #bet {
-        font-size: 30px;
-    }
-    #iconlist-2 {
-        padding-left: 0;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 781px) {
-    /* BANNER HEIGHT */
-    .col-md-2, .col-md-4, .col-md-6 {
-        height: 550px;
-    }
-    
-    h1#name {
-        font-size: 45px;
-    }
-
-    #links {
-        font-size: 24px;
-        padding-bottom: 50px;
-    }
-
-    #fet {
-        font-size: 30px;
-    }
-    #linkedin {
-        width: 100px;
-        padding-bottom: 50px;
-    }
-
-    #bet {
-        font-size: 30px;
-    }
-    #iconlist-2 {
-        padding-left: 0;
-    }
-}
-
-/* MOBILE DISPLAY */
-@media screen and (max-width: 767px) {
-    img#logo{
-        margin-left: 0;
-    }
-    nav li {
-        display: none;
-    }
+/* Tablet */
+@media screen and (max-width: 768px) {
     nav {
         display: flex;
         justify-content: flex-end;
     }
 
-    #menu-icon {
-    display: block;
-    }
-
-    #menu-icon:hover {
-        cursor: pointer;
-    }
-
-    .col-md-4 {
-        padding: 10px;
-        height: 213px;
-    }
-    .col-md-2, .col-md-4 {
-        border-right: none;
-        text-align: left;
-        padding-right: 0;
-    }
-
-    .col-md-2 {
-        order: 1;
-        border-top: none;
-        height: 200px;
-        padding-left: 0;
+    nav li {
+        display: none;
     }
     
-    #links {
-        padding: 0;
-        margin-bottom: 0;
-        text-align: center;
+    #menu-icon {
         display: block;
-    }
-
-    #linkurls {
-        text-align: center;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .col-md-6 {
-        order: 1;
-        border-top: none;
-        height: 400px;
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    #full-stack {
-        width: 323px;
-    }
-
-    /* I was not a fan of the fade-in effects on Mobile Display, so I put back each orginal display. */
-    #iconlist {
-        padding-left: 0;
-        display: flex;
-    }
-    #iconlist-2 {
-        display: flex;
-        width: 100%;
-        margin: 0 auto;
-        padding-bottom: 0;
-        padding-left: 0;
-    }
-    #linkedin {
-        display: block;
-        padding-bottom: 20px;
-        width:150px;
-        height: 100px;
-    }
-    #github {
-        display: block;
-        width: 80px;
-        height: 100px;
-
-    }
-    #fet {
-        display: block;
-    }
-    #bet {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 579px) {
-    .col-md-6 {
-        height: 450px;
-    }
-}
-
-@media screen and (max-width: 545px) {
-    .col-md-6 {
-        height: 515px;
     }
 }

@@ -26,28 +26,7 @@ setTimeout(function typeC () {
         setTimeout(typeC, 30);
       }
 }, 2300);
-setTimeout(function() {
-$("#links").fadeIn("slow");
-$("#fet").fadeIn("slow");
-$("#links").attr("style", "display: block") //This is a bug patch for when you switch from mobile display to desktop.
-$("#fet").attr("style", "display: block")
-}, 4100)
-setTimeout(function() {
-$("#iconlist").fadeIn()
-$("#linkedin").fadeIn()
-$("#iconlist").attr("style", "display: flex")
-$("#linkedin").css('display','block')
-}, 4500)
-setTimeout(function() {
-    $("#bet").fadeIn("slow");
-    $("#bet").attr("style", "display: block")
-    }, 5000)
-setTimeout(function() {
-    $("#iconlist-2").fadeIn()
-    $("#github").fadeIn()
-    $("#iconlist-2").attr("style", "display: flex")
-    $("#github").css('display','block')
-    }, 5400)
+
 
 function openLink (x) {
     open("https://" + x);
@@ -80,6 +59,7 @@ $.ajax("https://spreadsheets.google.com/feeds/list/10vCKRW3pH7xYwJO6E_0_ufhaKcfv
     //When project cards load, the rest of the content will load
     document.getElementById("main-heading").style.display = "block"
     document.getElementById("about-heading").style.display = "block"
+    document.getElementById("tools").style.display = "block";
 
 })
 .catch((error) => {
