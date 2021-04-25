@@ -61,6 +61,36 @@ $.ajax("https://spreadsheets.google.com/feeds/list/10vCKRW3pH7xYwJO6E_0_ufhaKcfv
     document.getElementById("about-heading").style.display = "block"
     document.getElementById("tools").style.display = "block";
 
+    const openModalButtons = document.querySelectorAll("[data-modal-target]")
+    const closeModalButtons = document.querySelectorAll("[data-close-button]")
+    const overlay = document.getElementById("overlay")
+
+    openModalButtons.forEach(button => {
+        button.addEventListener('click', ()=> {
+            const modal = document.querySelector(button.dataset.modalTarget)
+            openModal(modal)
+        })
+    })
+
+    closeModalButtons.forEach(button => {
+        button.addEventListener('click', ()=> {
+            const modal = button.closest('.modals')
+            closeModal(modal)
+        })
+    })
+
+    function openModal(modal) {
+        if (modal == null) return
+        modal.classList.add('active')
+        overlay.classList.add('active')
+    }
+
+    function closeModal () {
+        if (modal == null) return
+        modal.classList.remove('active')
+        overlay.classList.remove('active')
+    }
+
 })
 .catch((error) => {
     console.log(error);
