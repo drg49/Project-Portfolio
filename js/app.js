@@ -18,15 +18,14 @@ setTimeout(function typeB () {
         b++;
         setTimeout(typeB, 72);
       }
-}, 1100);
+}, 1000);
 setTimeout(function typeC () {
     if (c < txtC.length) {
         document.getElementById("full-stack").innerHTML += txtC.charAt(c);
         c++;
         setTimeout(typeC, 30);
       }
-}, 2300);
-
+}, 2200);
 
 function openLink (x) {
     open("https://" + x);
@@ -60,6 +59,7 @@ $.ajax("https://spreadsheets.google.com/feeds/list/10vCKRW3pH7xYwJO6E_0_ufhaKcfv
     document.getElementById("main-heading").style.display = "block"
     document.getElementById("about-heading").style.display = "block"
     document.getElementById("tools").style.display = "block";
+    document.getElementById("contact-heading").style.display = "block";
 
     const openModalButtons = document.querySelectorAll("[data-modal-target]")
     const closeModalButtons = document.querySelectorAll("[data-close-button]")
