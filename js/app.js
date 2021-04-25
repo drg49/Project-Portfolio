@@ -72,6 +72,13 @@ $.ajax("https://spreadsheets.google.com/feeds/list/10vCKRW3pH7xYwJO6E_0_ufhaKcfv
         })
     })
 
+    overlay.addEventListener("click", () => {
+        const modals = document.querySelectorAll('.modals.active')
+        modals.forEach(modal => {
+            closeModal(modal)
+        })
+    })
+
     closeModalButtons.forEach(button => {
         button.addEventListener('click', ()=> {
             const modal = button.closest('.modals')
