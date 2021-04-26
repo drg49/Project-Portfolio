@@ -53,11 +53,6 @@ a:first-of-type {
     color: inherit;
 }
 
-a:nth-of-type(2) {
-    text-decoration: none;
-    color: inherit;
-}
-
 #topbar {
     display: flex;
     justify-content: space-between;
@@ -324,5 +319,11 @@ ul {
 @media screen and (max-width: 414px) {
     #turn-blue {
         height: 217px;
+    }
+    #main-heading {
+        display: block;
+    }
+    #full-stack {
+        width: 315px;
     }
 }
