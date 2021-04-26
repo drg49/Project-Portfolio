@@ -18,7 +18,7 @@ setTimeout(function typeB () {
         b++;
         setTimeout(typeB, 72);
       }
-}, 1100);
+}, 1200);
 setTimeout(function typeC () {
     if (c < txtC.length) {
         document.getElementById("full-stack").innerHTML += txtC.charAt(c);
