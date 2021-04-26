@@ -75,6 +75,8 @@ a:nth-of-type(2) {
 
 #turn-blue {
     background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );
+    display: block;
+    height: 192px;
 }
 
 #name {
@@ -145,6 +147,7 @@ main {
 }
 
 #main-heading {
+    display: none;
     padding-top: 40px;
     justify-content: center;
     flex-wrap: wrap;
@@ -194,10 +197,6 @@ ul {
 }
 
 #menu-icon {
-    display: none;
-}
-
-#main-heading {
     display: none;
 }
 
@@ -319,5 +318,11 @@ ul {
     
     #menu-icon {
         display: block;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #turn-blue {
+        height: 217px;
     }
 }
