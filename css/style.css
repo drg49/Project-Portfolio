@@ -21,7 +21,7 @@ img:hover {
 
 #header {
     flex-wrap: nowrap;
-    background-color: #1fa1b8ab;
+    background-color: #1fa1b8d3;
 }
 
 nav {
@@ -39,7 +39,7 @@ li {
     font-size: 32px;
     margin: 0 auto;
     transition: 280ms linear;
-    color:white;
+    color:rgb(0, 0, 0);
 }
 
 li:hover {
