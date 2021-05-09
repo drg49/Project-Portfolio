@@ -37,24 +37,21 @@ class ProjectCard extends HTMLElement {
             }
             #dropdown {
                 border-top:1px solid;
-                transition: all 0.5s;
-
-            }
-            #dropdown:hover .dropdown-content{
-                display: block;
             }
             .dropdown-content {
-                display: none;
+                padding-bottom: 5px;
                 padding-top: 5px;
             }
             .dropdown-content a {
+                text-decoration: none;
                 color: lightblue;
+            }
+            .dropdown-content a:hover {
+                color: lightskyblue;
             }
         </style>
         `
         this.shadowRoot.innerHTML = `
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
         ${style}
         <div class="boxcard">
 
@@ -65,7 +62,6 @@ class ProjectCard extends HTMLElement {
         <div class="dropdown-content">
             <a href=${this.getAttribute("github")} target="blank">Check it out on Github</a>
         </div>
-        <i class="fas fa-chevron-down"></i>
         </div>
 
         </div>
