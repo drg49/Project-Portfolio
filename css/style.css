@@ -202,9 +202,10 @@ ul {
     background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );
 }
 
-#about-heading h1 {
+#about {
     font-family: 'Fjalla One', sans-serif;
     color: whitesmoke;
+    padding: 7px;
 }
 
 #contact-heading {
@@ -213,9 +214,14 @@ ul {
     background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );
 }
 
-#contact-heading h1 {
+#contact {
     font-family: 'Fjalla One', sans-serif;
     color: whitesmoke;
+    padding: 7px;
+}
+
+#contact-row {
+    padding-bottom: 5px;
 }
 
 #tools {
@@ -288,6 +294,51 @@ ul {
 #overlay.active {
     opacity: 1;
     pointer-events: all;
+}
+
+form {
+    border: 3px groove darkblue;
+    background-color: #1FA1B8;
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+form label {
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    padding-left: 2px;
+    font-size: 18px;
+    padding-bottom: 2px;
+}
+
+form input {
+    margin-bottom: 12px;
+    outline: none;
+    width: 200px;
+}
+
+#formMessage {
+    width: 100%;
+    height: 145px;
+    outline: none;
+    resize: none;
+    border-radius: 3px;
+}
+
+#btn {
+    text-align: right;
+}
+
+#send-email {
+    padding: 3px 7px 3px 7px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background-color: rgb(29, 117, 108);
+    margin-right: 10px;
 }
 
 
