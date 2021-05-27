@@ -67,7 +67,8 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12" id="main-heading">
-          <section style="display: flex; justify-content: space-around; max-width: 300px; margin: auto;">
+          <h4>Change Theme</h4>
+          <section id="theme-changer" >
             <div>
               <label for="blue">Blue</label><br>
               <input type=radio name="theme" checked="true" id="blue" onclick="setTheme(1)">
@@ -143,11 +144,11 @@
         <div class="col-md-12" id="contact-row">
           <h1 id="contact">Contact Me</h1>
           <form id="contact-form" action="https://formsubmit.co/drgsucceed@gmail.com" method="POST">
-            <label for="formName">Name</label><br>
+            <label class="form-label" for="formName">Name</label><br>
             <input type="text" name="name" id="formName"><br>
-            <label for="formName">Email</label><br>
+            <label class="form-label" for="formName">Email</label><br>
             <input type="email" name="email" required><br>
-            <label for="formMessage">Message</label><br>
+            <label class="form-label" for="formMessage">Message</label><br>
             <textarea type="text" name="message" id="formMessage"></textarea><br>
             <div id="btn">
               <button id="send-email" type="submit"><i class="fas fa-paper-plane"></i> &nbsp Send</button>

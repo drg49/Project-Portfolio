@@ -40,7 +40,7 @@ const setTheme = (x) => {
         $("#header").css("background-color", "#1fa1b8d3");
         $("li").css("color", "black");
         $("li").hover(function(){
-            $(this).css("color", "#79FF7A");
+            $(this).css("color", "#99AFD7");
             $(this).css('textShadow','3px 3px #065664');
             }, function(){
             $(this).css("color", "black");
@@ -48,16 +48,17 @@ const setTheme = (x) => {
           });
         $("#turn-blue, #about-heading, #contact-heading").css("background-image", "linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% )")
         $("#name, #greeting, #full-stack").css("color", "white")
-        $("#name, #fet, #bet").css("background", "(rgb(255, 255, 255), rgb(177, 177, 177))")
         $("#fet, #bet").css("color", "white")
         $("#main-heading, #about, #contact").css("color", "whitesmoke")
+        $("#jslogo").css("color", "yellow")
         $("form").css("border", "3px groove darkblue")
-        $(".modals").css("background-color", "black")
+        $(".form-label").css("color", "white")
+        $(".modals").css("background-color", "darkblue")
         $(".close-button, .title").css("color", "white")
         if(window.matchMedia("(max-width: 768px)").matches) {
             $("li").css("color", "white")
             $("li").hover(function(){
-                $(this).css("color", "white");
+                $(this).css("color", "#99AFD7");
                 $(this).css('textShadow','none');
                 }, function(){
                 $(this).css("color", "white");
@@ -67,8 +68,73 @@ const setTheme = (x) => {
         document.getElementById("blue").checked = true
     }
     if (theme === "2") {
-        $("body, main, form").css("background-color", "#1FA1B8");
-        $("#header").css("background-color", "#1fa1b8d3");
+        $("body, main, form").css("background-color", "#0c0032");
+        $("#header").css("background-color", "#190061d3");
+        $("li").css("color", "white");
+        $("li").hover(function(){
+            $(this).css("color", "#1261A0");
+            $(this).css('textShadow','3px 3px #3500D3');
+            }, function(){
+            $(this).css("color", "white");
+            $(this).css('textShadow','none');
+          });
+        $("#turn-blue, #about-heading, #contact-heading").css("background-image", "linear-gradient(90deg, rgba(58,27,152,1) 25%, rgba(46,2,172,1) 71%)")
+        $("#name, #greeting, #full-stack").css("color", "white")
+        $("#fet, #bet").css("color", "white")
+        $("#main-heading, #about, #contact").css("color", "whitesmoke")
+        $("#jslogo").css("color", "yellow")
+        $("form").css("border", "3px groove blue")
+        $(".form-label").css("color", "white")
+        $(".modals").css("background-color", "purple")
+        $(".close-button, .title").css("color", "black")
+        if(window.matchMedia("(max-width: 768px)").matches) {
+            $("li").css("color", "black")
+            $("li").hover(function(){
+                $(this).css("color", "lightblue");
+                $(this).css('textShadow','none');
+                }, function(){
+                $(this).css("color", "black");
+                $(this).css('textShadow','none');
+              });
+        }
+        document.getElementById("dark").checked = true
+    }
+    if (theme === "3") {
+        $("body, main, form").css("background-color", "#FFFF00");
+        $("#header").css("background-color", "#FFFF00d3");
+        $("li").css("color", "black");
+        $("li").hover(function(){
+            $(this).css("color", "brown");
+            $(this).css('textShadow','3px 3px #CCCC00');
+            }, function(){
+            $(this).css("color", "black");
+            $(this).css('textShadow','none');
+          });
+        $("#turn-blue, #about-heading, #contact-heading").css("background-image", "linear-gradient(90deg, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 71%)")
+        $("#name, #greeting, #full-stack").css("color", "yellow")
+        $("#fet, #bet").css("color", "black")
+        $("#main-heading").css("color", "black")
+        $("#about, #contact").css("color", "yellow")
+        $("#jslogo").css("color", "darkorange")
+        $(".form-label").css("color", "black")
+        $("form").css("border", "3px solid brown")
+        $(".modals").css("background-color", "black")
+        $(".close-button, .title").css("color", "yellow")
+        if(window.matchMedia("(max-width: 768px)").matches) {
+            $("li").css("color", "yellow")
+            $("li").hover(function(){
+                $(this).css("color", "brown");
+                $(this).css('textShadow','none');
+                }, function(){
+                $(this).css("color", "yellow");
+                $(this).css('textShadow','none');
+              });
+        }
+        document.getElementById("bee").checked = true
+    }
+    if (theme === "4") {
+        $("body, main, form").css("background-color", "#ff7077");
+        $("#header").css("background-color", "#ff7077d3");
         $("li").css("color", "black");
         $("li").hover(function(){
             $(this).css("color", "#79FF7A");
@@ -77,30 +143,26 @@ const setTheme = (x) => {
             $(this).css("color", "black");
             $(this).css('textShadow','none');
           });
-        $("#turn-blue, #about-heading, #contact-heading").css("background-image", "linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% )")
-        $("#name, #greeting, #full-stack").css("color", "white")
-        $("#name, #fet, #bet").css("background", "(rgb(255, 255, 255), rgb(177, 177, 177))")
-        $("#fet, #bet").css("color", "white")
-        $("#main-heading, #about, #contact").css("color", "whitesmoke")
-        $("form").css("border", "3px groove darkblue")
-        $(".modals").css("background-color", "black")
-        $(".close-button, .title").css("color", "white")
+        $("#turn-blue, #about-heading, #contact-heading").css("background-image", "linear-gradient(90deg, rgba(0,150,111,1) 0%, rgba(21,114,65,1) 71%)")
+        $("#name, #greeting, #full-stack").css("color", "black")
+        $("#fet, #bet").css("color", "black")
+        $("#main-heading").css("color", "black")
+        $("#about, #contact").css("color", "black")
+        $("#jslogo").css("color", "yellow")
+        $(".form-label").css("color", "black")
+        $("form").css("border", "3px solid #75b855")
+        $(".modals").css("background-color", "#013220")
+        $(".close-button, .title").css("color", "#ff7077")
         if(window.matchMedia("(max-width: 768px)").matches) {
-            $("li").css("color", "white")
+            $("li").css("color", "#ff7077")
             $("li").hover(function(){
-                $(this).css("color", "white");
+                $(this).css("color", "pink");
                 $(this).css('textShadow','none');
                 }, function(){
-                $(this).css("color", "white");
+                $(this).css("color", "#ff7077");
                 $(this).css('textShadow','none');
               });
         }
-        document.getElementById("dark").checked = true
-    }
-    if (theme === "3") {
-        document.getElementById("bee").checked = true
-    }
-    if (theme === "4") {
         document.getElementById("melon").checked = true
     }
 }
