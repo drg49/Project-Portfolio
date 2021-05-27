@@ -53,15 +53,15 @@ const setTheme = (x) => {
         $("#jslogo").css("color", "yellow")
         $("form").css("border", "3px groove darkblue")
         $(".form-label").css("color", "white")
-        $(".modals").css("background-color", "darkblue")
-        $(".close-button, .title").css("color", "white")
+        $(".modals").css("background-color", "#96CDCD")
+        $(".close-button, .title").css("color", "black")
         if(window.matchMedia("(max-width: 768px)").matches) {
-            $("li").css("color", "white")
+            $("li").css("color", "black")
             $("li").hover(function(){
                 $(this).css("color", "#99AFD7");
                 $(this).css('textShadow','none');
                 }, function(){
-                $(this).css("color", "white");
+                $(this).css("color", "black");
                 $(this).css('textShadow','none');
               });
         }
@@ -86,14 +86,14 @@ const setTheme = (x) => {
         $("form").css("border", "3px groove blue")
         $(".form-label").css("color", "white")
         $(".modals").css("background-color", "purple")
-        $(".close-button, .title").css("color", "black")
+        $(".close-button, .title").css("color", "white")
         if(window.matchMedia("(max-width: 768px)").matches) {
-            $("li").css("color", "black")
+            $("li").css("color", "white")
             $("li").hover(function(){
-                $(this).css("color", "lightblue");
+                $(this).css("color", "#1261A0");
                 $(this).css('textShadow','none');
                 }, function(){
-                $(this).css("color", "black");
+                $(this).css("color", "white");
                 $(this).css('textShadow','none');
               });
         }
@@ -118,15 +118,15 @@ const setTheme = (x) => {
         $("#jslogo").css("color", "darkorange")
         $(".form-label").css("color", "black")
         $("form").css("border", "3px solid brown")
-        $(".modals").css("background-color", "black")
-        $(".close-button, .title").css("color", "yellow")
+        $(".modals").css("background-color", "yellow")
+        $(".close-button, .title").css("color", "black")
         if(window.matchMedia("(max-width: 768px)").matches) {
-            $("li").css("color", "yellow")
+            $("li").css("color", "black")
             $("li").hover(function(){
                 $(this).css("color", "brown");
                 $(this).css('textShadow','none');
                 }, function(){
-                $(this).css("color", "yellow");
+                $(this).css("color", "black");
                 $(this).css('textShadow','none');
               });
         }
@@ -151,15 +151,15 @@ const setTheme = (x) => {
         $("#jslogo").css("color", "yellow")
         $(".form-label").css("color", "black")
         $("form").css("border", "3px solid #75b855")
-        $(".modals").css("background-color", "#013220")
-        $(".close-button, .title").css("color", "#ff7077")
+        $(".modals").css("background-color", "#ff7077")
+        $(".close-button, .title").css("color", "black")
         if(window.matchMedia("(max-width: 768px)").matches) {
-            $("li").css("color", "#ff7077")
+            $("li").css("color", "black")
             $("li").hover(function(){
-                $(this).css("color", "pink");
+                $(this).css("color", "#79FF7A");
                 $(this).css('textShadow','none');
                 }, function(){
-                $(this).css("color", "#ff7077");
+                $(this).css("color", "black");
                 $(this).css('textShadow','none');
               });
         }
