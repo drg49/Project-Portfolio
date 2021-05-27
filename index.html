@@ -36,7 +36,7 @@
     <script src="js/webcomponents.js" defer></script>
     <script src="js/app.js" defer></script>
   </head>
-  <body onload="typeA()">
+  <body onload="start()">
     <!-- Header -->
     <div class="container-fluid">
       <div class="row" id="header">
@@ -67,6 +67,24 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12" id="main-heading">
+          <section style="display: flex; justify-content: space-around; max-width: 300px; margin: auto;">
+            <div>
+              <label for="blue">Blue</label><br>
+              <input type=radio name="theme" checked="true" id="blue" onclick="setTheme(1)">
+            </div>
+            <div>
+              <label for="dark">Dark</label><br>
+              <input type=radio name="theme" id="dark" onclick="setTheme(2)">
+            </div>
+            <div>
+              <label for="bee">Bee</label><br>
+              <input type=radio name="theme" id="bee" onclick="setTheme(3)">
+            </div>
+            <div>
+              <label for="bee">Melon</label><br>
+              <input type=radio name="theme" id="melon" onclick="setTheme(4)">
+            </div>
+          </section>
           <h3>Please take a look at some of my projects below. Just click on the image to open the link!</h3>
         </div>
       </div>

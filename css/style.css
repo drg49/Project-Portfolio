@@ -39,7 +39,7 @@ li {
     font-size: 32px;
     margin: 0 auto;
     transition: 280ms linear;
-    color:rgb(0, 0, 0);
+    color:black;
 }
 
 li:hover {
@@ -96,16 +96,6 @@ a:first-of-type {
     font-size: 30px;
 }
 
-#links {
-    color: white;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 50px;
-    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(177, 177, 177));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 #fet {
     text-align: center;
     color: white;
@@ -131,7 +121,6 @@ a:first-of-type {
     padding-bottom: 10px;
 }
 
-
 main {
     width: 100%;
     display: flex;
@@ -149,7 +138,7 @@ main {
     text-align: center;
 }
 
-#main-heading h3 {
+#main-heading {
     font-family: 'Fjalla One', sans-serif;
     color: whitesmoke;
 }
@@ -238,7 +227,7 @@ ul {
     transition: 200ms ease-in-out;
     border: 1px solid black;
     border-radius: 5px;
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     width: 500px;
     max-width: 80%;
     z-index: 10;   

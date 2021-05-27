@@ -5,7 +5,7 @@ let txtA = 'Hi there, my name is';
 let txtB = 'Daniel Gavin';
 let txtC = 'Full stack developer from Thousand Oaks, California';
 
-function typeA() {
+const typeA = () => {
   if (a < txtA.length) {
     document.getElementById("greeting").innerHTML += txtA.charAt(a);
     a++;
@@ -27,8 +27,87 @@ setTimeout(function typeC () {
       }
 }, 2200);
 
-function openLink (x) {
+const openLink = (x) => {
     open("https://" + x);
+}
+
+const setTheme = (x) => {
+    localStorage.setItem("theme", x)
+    const theme = localStorage.getItem("theme")
+    console.log(localStorage)
+    if (theme === "1") {
+        $("body, main, form").css("background-color", "#1FA1B8");
+        $("#header").css("background-color", "#1fa1b8d3");
+        $("li").css("color", "black");
+        $("li").hover(function(){
+            $(this).css("color", "#79FF7A");
+            $(this).css('textShadow','3px 3px #065664');
+            }, function(){
+            $(this).css("color", "black");
+            $(this).css('textShadow','none');
+          });
+        $("#turn-blue, #about-heading, #contact-heading").css("background-image", "linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% )")
+        $("#name, #greeting, #full-stack").css("color", "white")
+        $("#name, #fet, #bet").css("background", "(rgb(255, 255, 255), rgb(177, 177, 177))")
+        $("#fet, #bet").css("color", "white")
+        $("#main-heading, #about, #contact").css("color", "whitesmoke")
+        $("form").css("border", "3px groove darkblue")
+        $(".modals").css("background-color", "black")
+        $(".close-button, .title").css("color", "white")
+        if(window.matchMedia("(max-width: 768px)").matches) {
+            $("li").css("color", "white")
+            $("li").hover(function(){
+                $(this).css("color", "white");
+                $(this).css('textShadow','none');
+                }, function(){
+                $(this).css("color", "white");
+                $(this).css('textShadow','none');
+              });
+        }
+        document.getElementById("blue").checked = true
+    }
+    if (theme === "2") {
+        $("body, main, form").css("background-color", "#1FA1B8");
+        $("#header").css("background-color", "#1fa1b8d3");
+        $("li").css("color", "black");
+        $("li").hover(function(){
+            $(this).css("color", "#79FF7A");
+            $(this).css('textShadow','3px 3px #065664');
+            }, function(){
+            $(this).css("color", "black");
+            $(this).css('textShadow','none');
+          });
+        $("#turn-blue, #about-heading, #contact-heading").css("background-image", "linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% )")
+        $("#name, #greeting, #full-stack").css("color", "white")
+        $("#name, #fet, #bet").css("background", "(rgb(255, 255, 255), rgb(177, 177, 177))")
+        $("#fet, #bet").css("color", "white")
+        $("#main-heading, #about, #contact").css("color", "whitesmoke")
+        $("form").css("border", "3px groove darkblue")
+        $(".modals").css("background-color", "black")
+        $(".close-button, .title").css("color", "white")
+        if(window.matchMedia("(max-width: 768px)").matches) {
+            $("li").css("color", "white")
+            $("li").hover(function(){
+                $(this).css("color", "white");
+                $(this).css('textShadow','none');
+                }, function(){
+                $(this).css("color", "white");
+                $(this).css('textShadow','none');
+              });
+        }
+        document.getElementById("dark").checked = true
+    }
+    if (theme === "3") {
+        document.getElementById("bee").checked = true
+    }
+    if (theme === "4") {
+        document.getElementById("melon").checked = true
+    }
+}
+
+const start = () => {
+    typeA()
+    setTheme(localStorage.getItem("theme"))
 }
 
 ///////////////////////////////////
