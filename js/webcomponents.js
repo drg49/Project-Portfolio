@@ -56,7 +56,7 @@ class ProjectCard extends HTMLElement {
         <div class="boxcard">
 
         <h2>${this.getAttribute("projectName")}</h2>
-        <a href=${this.getAttribute("liveurl")} target="blank"><img src=${this.getAttribute("img")} alt="An image of Daniel's website"></a>
+        <a href=${this.getAttribute("liveurl")} target="_blank"><img src=${this.getAttribute("img")} alt="An image of Daniel's website"></a>
         <p>${this.getAttribute("description")}</p>
         <div id="dropdown">
         <div class="dropdown-content">
