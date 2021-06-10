@@ -26,6 +26,7 @@ class ProjectCard extends HTMLElement {
             img {
                 width: 350px;
                 height: 169px;
+                object-fit: cover;
                 background-color: black;
             }
             p {
