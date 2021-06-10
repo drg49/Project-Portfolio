@@ -123,6 +123,10 @@ main {
     transition: 280ms linear;
 }
 
+input[type=radio]:hover {
+    cursor: pointer;
+}
+
 #main-heading {
     font-family: 'Fjalla One', sans-serif;
     color: whitesmoke;
