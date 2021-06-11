@@ -238,7 +238,7 @@ $.ajax("https://spreadsheets.google.com/feeds/list/10vCKRW3pH7xYwJO6E_0_ufhaKcfv
         overlay.classList.remove('active')
     }
 
-})
+}).then(() => start())
 .catch((error) => {
     console.log(error);
 })
