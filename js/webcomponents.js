@@ -50,15 +50,20 @@ class ProjectCard extends HTMLElement {
             .dropdown-content a:hover {
                 color: lightskyblue;
             }
+
+            a {
+                text-decoration: none;
+            }
+
         </style>
         `
         this.shadowRoot.innerHTML = `
         ${style}
         <div class="boxcard">
 
-        <h2>${this.getAttribute("projectName")}</h2>
+        <a href=${this.getAttribute("liveurl")} target="_blank"><h2>${this.getAttribute("projectName")}</h2></a>
         <a href=${this.getAttribute("liveurl")} target="_blank"><img src=${this.getAttribute("img")} alt="An image of Daniel's website"></a>
-        <p>${this.getAttribute("description")}</p>
+        <a href=${this.getAttribute("liveurl")} target="_blank"><p>${this.getAttribute("description")}</p></a>
         <div id="dropdown">
         <div class="dropdown-content">
             <a href=${this.getAttribute("github")} target="blank">Check it out on Github</a>
