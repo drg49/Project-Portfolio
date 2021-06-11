@@ -9,23 +9,23 @@ const typeA = () => {
   if (a < txtA.length) {
     document.getElementById("greeting").innerHTML += txtA.charAt(a);
     a++;
-    setTimeout(typeA, 37);
+    setTimeout(typeA, 50);
   }
 }
 setTimeout(function typeB () {
     if (b < txtB.length) {
         document.getElementById("name").innerHTML += txtB.charAt(b);
         b++;
-        setTimeout(typeB, 72);
+        setTimeout(typeB, 70);
       }
-}, 1200);
+}, 1500);
 setTimeout(function typeC () {
     if (c < txtC.length) {
         document.getElementById("full-stack").innerHTML += txtC.charAt(c);
         c++;
-        setTimeout(typeC, 30);
+        setTimeout(typeC, 34);
       }
-}, 2200);
+}, 2600);
 
 const openLink = (x) => {
     open("https://" + x);
@@ -168,8 +168,9 @@ const setTheme = (x) => {
 
 const start = () => {
     typeA()
-    setTheme(localStorage.getItem("theme"))
 }
+
+// setTheme(localStorage.getItem("theme"))
 
 ///////////////////////////////////
 // Get data from Google Sheets
