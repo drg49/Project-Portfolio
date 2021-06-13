@@ -3,7 +3,7 @@ let b = 0;
 let c = 0;
 let txtA = 'Hi there, my name is';
 let txtB = 'Daniel Gavin';
-let txtC = 'Full stack developer from Thousand Oaks, California';
+let txtC = 'Full Stack Developer';
 
 const typeA = () => {
   if (a < txtA.length) {
