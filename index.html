@@ -44,7 +44,7 @@
           <img id="logo" src="images/dgGreenLogo.png" width="95" height="95" alt="green logo with bumblebee">
           <nav>
             <li><a href="#banner">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#point">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <i data-modal-target="#modal" class="fas fa-bars fa-2x" id="menu-icon"></i>
           </nav>
@@ -55,7 +55,6 @@
     <!-- BANNER -->
     <div class="container-fluid">
       <div class="row" id="banner">
-        
         <div class="col-md-12" id="turn-blue">
           <p id="greeting"></p>
           <h1 id="name"></h1>
@@ -102,15 +101,26 @@
       </div>
     </div>
 
-    <div class="container-fluid">
+    <div style="height: 96px;" id="point"></div>
+
+    <div class="container-fluid" id="about-section">
       <div class="row" id="about-heading">
         <div class="col-md-12">
-          <h1 id="about">About</h2>
+          <h1 id="about">About Me</h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
-          <!-- RESUME AND ABOUT ME WILL GO HERE -->
+        <div class="col-md-12" id="about-flex">
+          <article id="about-article">
+            <p id="about-p">
+              Hello there! First off, I want to thank you for taking a look at my portfolio. My name is Daniel Gavin, and I am a 21-year-old software engineer from Thousand Oaks, California. I wrote my first JavaScript program when I was 14 while trying to create a game in Unity3D. Throughout my teenage years, I messed around with C++ and Python. Then I began to learn web development, something I have never tried before. My dream has always been to create something that others will use, whether it's a game or an application. I am thankful for the internet and my instructors at General Assembly for teaching me so much. It has been a long journey to get to where I am now, and it all started with my passion for technology.
+            </p>
+          </article>
+          <figure>
+            <img src="images/ca_pic.jpeg" id="about-image"/>
+            <figcaption>Thousand Oaks, California</figcaption>
+          </figure>
+          
         </div>
       </div>
     </div>
@@ -171,7 +181,7 @@
         </div>
         <div class="modals-body">
           <li data-close-button class="close-button"><a href="#banner">Home</a></li>
-          <li data-close-button class="close-button"><a href="#about">About</a></li>
+          <li data-close-button class="close-button"><a href="#point">About</a></li>
           <li data-close-button class="close-button"><a href="#contact">Contact</a></li>
         </div>
       </div>

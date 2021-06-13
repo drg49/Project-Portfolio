@@ -45,10 +45,12 @@ const setTheme = (x) => {
             $(this).css("color", "black");
             $(this).css('textShadow','none');
           });
-        $("#turn-blue, #about-heading, #contact-heading").css("background-image", "linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% )")
+        $("#turn-blue, #about-section, #contact-heading").css("background-image", "linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% )")
         $("#name, #greeting, #full-stack").css("color", "white")
         $("#fet, #bet").css("color", "white")
         $("#main-heading, #about, #contact").css("color", "whitesmoke")
+        $("#about-p").css("color", "white")
+        $("figcaption").css("color", "white")
         $("#jslogo").css("color", "yellow")
         $("form").css("border", "3px groove darkblue")
         $(".form-label").css("color", "white")
@@ -77,10 +79,12 @@ const setTheme = (x) => {
             $(this).css("color", "white");
             $(this).css('textShadow','none');
           });
-        $("#turn-blue, #about-heading, #contact-heading").css("background-image", "linear-gradient(90deg, rgba(58,27,152,1) 25%, rgba(46,2,172,1) 71%)")
+        $("#turn-blue, #about-section, #contact-heading").css("background-image", "linear-gradient(90deg, rgba(58,27,152,1) 25%, rgba(46,2,172,1) 71%)")
         $("#name, #greeting, #full-stack").css("color", "white")
         $("#fet, #bet").css("color", "white")
         $("#main-heading, #about, #contact").css("color", "whitesmoke")
+        $("#about-p").css("color", "white")
+        $("figcaption").css("color", "white")
         $("#jslogo").css("color", "yellow")
         $("form").css("border", "3px groove blue")
         $(".form-label").css("color", "white")
@@ -109,11 +113,13 @@ const setTheme = (x) => {
             $(this).css("color", "black");
             $(this).css('textShadow','none');
           });
-        $("#turn-blue, #about-heading, #contact-heading").css("background-image", "linear-gradient(90deg, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 71%)")
+        $("#turn-blue, #about-section, #contact-heading").css("background-image", "linear-gradient(90deg, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 71%)")
         $("#name, #greeting, #full-stack").css("color", "yellow")
         $("#fet, #bet").css("color", "black")
         $("#main-heading").css("color", "black")
         $("#about, #contact").css("color", "yellow")
+        $("#about-p").css("color", "yellow")
+        $("figcaption").css("color", "yellow")
         $("#jslogo").css("color", "darkorange")
         $(".form-label").css("color", "black")
         $("form").css("border", "3px solid brown")
@@ -142,11 +148,13 @@ const setTheme = (x) => {
             $(this).css("color", "black");
             $(this).css('textShadow','none');
           });
-        $("#turn-blue, #about-heading, #contact-heading").css("background-image", "linear-gradient(90deg, rgba(0,150,111,1) 0%, rgba(21,114,65,1) 71%)")
+        $("#turn-blue, #about-section, #contact-heading").css("background-image", "linear-gradient(90deg, rgba(0,150,111,1) 0%, rgba(21,114,65,1) 71%)")
         $("#name, #greeting, #full-stack").css("color", "black")
         $("#fet, #bet").css("color", "black")
         $("#main-heading").css("color", "black")
         $("#about, #contact").css("color", "black")
+        $("#about-p").css("color", "black")
+        $("figcaption").css("color", "black")
         $("#jslogo").css("color", "yellow")
         $(".form-label").css("color", "black")
         $("form").css("border", "3px solid #75b855")
@@ -198,7 +206,7 @@ $.ajax("https://spreadsheets.google.com/feeds/list/10vCKRW3pH7xYwJO6E_0_ufhaKcfv
     })
     //When project cards load, the rest of the content will load
     document.getElementById("main-heading").style.display = "block"
-    document.getElementById("about-heading").style.display = "block"
+    document.getElementById("about-section").style.display = "block"
     document.getElementById("tools").style.display = "block";
     document.getElementById("contact-heading").style.display = "block";
 
