@@ -13,6 +13,8 @@ class ProjectCard extends HTMLElement {
                 border: 1px solid;
                 border-radius: 9px;
                 margin-top: 14px;
+                margin-left: 10px;
+                margin-right: 10px;
                 margin-bottom: 28px;
                 background-color: #005d92;
                 background-image: linear-gradient(160deg, #005d92 0%, #007f72 100%);
