@@ -103,12 +103,12 @@ a:first-of-type {
 }
 
 h4 {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 h3 {
     margin-top: 89px;
-    margin-bottom: 11px;
+    margin-bottom: 29px;
 }
 
 #fet {
@@ -200,6 +200,7 @@ ul {
 
 #menu-icon {
     display: none;
+    color: black;
 }
 
 #about-section {
@@ -430,7 +431,6 @@ form input {
 
     h3 {
         margin-top: 62px;
-        margin-bottom: 29px;
     }
 
 }
