@@ -55,6 +55,7 @@ const setTheme = (x) => {
         $("form").css("border", "3px groove darkblue")
         $(".form-label").css("color", "white")
         $("#menu-icon").css("color", "black")
+        $("#linked-in, #github, #resume").css("color", "white")
         $(".modals").css("background-color", "#96CDCD")
         $(".close-button, .title").css("color", "black")
         if(window.matchMedia("(max-width: 768px)").matches) {
@@ -90,6 +91,7 @@ const setTheme = (x) => {
         $("form").css("border", "3px groove blue")
         $(".form-label").css("color", "white")
         $("#menu-icon").css("color", "white")
+        $("#linked-in, #github, #resume").css("color", "white")
         $(".modals").css("background-color", "purple")
         $(".close-button, .title").css("color", "white")
         if(window.matchMedia("(max-width: 768px)").matches) {
@@ -126,6 +128,7 @@ const setTheme = (x) => {
         $(".form-label").css("color", "black")
         $("form").css("border", "3px solid brown")
         $("#menu-icon").css("color", "black")
+        $("#linked-in, #github, #resume").css("color", "yellow")
         $(".modals").css("background-color", "yellow")
         $(".close-button, .title").css("color", "black")
         if(window.matchMedia("(max-width: 768px)").matches) {
@@ -162,6 +165,7 @@ const setTheme = (x) => {
         $(".form-label").css("color", "black")
         $("form").css("border", "3px solid #75b855")
         $("#menu-icon").css("color", "#157241")
+        $("#linked-in, #github, #resume").css("color", "#ff7077")
         $(".modals").css("background-color", "#ff7077")
         $(".close-button, .title").css("color", "black")
         if(window.matchMedia("(max-width: 768px)").matches) {

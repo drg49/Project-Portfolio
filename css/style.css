@@ -182,22 +182,6 @@ ul {
     cursor: default;
 }
 
-#linkedin {
-    margin: 0 auto;
-}
-
-#linkedin:hover {
-    cursor: pointer;
-}
-
-#github {
-    margin: 0 auto;
-}
-
-#github:hover {
-    cursor: pointer;
-}
-
 #menu-icon {
     display: none;
     color: black;
@@ -349,7 +333,7 @@ form {
     max-width: 700px;
     text-align: left;
     padding: 20px;
-    margin-bottom: 39px;
+    margin-bottom: 35px;
     transition: 280ms linear;
 }
 
@@ -386,6 +370,37 @@ form input {
     color: white;
     background-color: rgb(29, 117, 108);
     margin-right: 10px;
+}
+
+#social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    max-width: 500px;
+    padding-bottom: 7px;
+}
+
+#social-media i:hover {
+    opacity: 0.85;
+}
+
+#github {
+    font-size: 41px;
+    color: white;
+    cursor: pointer
+}
+
+#linked-in {
+    font-size: 41px;
+    color: white;
+    cursor: pointer
+}
+
+#resume {
+    font-size: 36px;
+    color: white;
+    cursor: pointer
 }
 
 
