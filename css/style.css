@@ -75,6 +75,7 @@ a:first-of-type {
     display: block;
     height: 192px;
     transition: 280ms linear;
+    text-align: center;
 }
 
 #name {
@@ -93,7 +94,7 @@ a:first-of-type {
 
 #banner p:first-of-type {
     margin-bottom: 0;
-    margin-top: 17px;
+    margin-top: 12px;
     font-size: 30px;
 }
 
@@ -360,6 +361,10 @@ form input {
     }
     li:hover {
         text-shadow: none;
+    }
+
+    #turn-blue {
+        text-align: left;
     }
 }
 
