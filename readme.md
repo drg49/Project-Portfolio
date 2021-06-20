@@ -1,7 +1,2 @@
-# Project Overview
-
-**PROJECT NAME:** SEIR Project Portfolio
-
-**PROJECT AUTHOR:** Daniel Gavin
-
+Daniel Gavin's Project Portfolio
 
