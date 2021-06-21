@@ -1,31 +1,3 @@
-let a = 0;  
-let b = 0;
-let c = 0;
-let txtA = 'Hi there, my name is';
-let txtB = 'Daniel Gavin';
-let txtC = 'Full Stack Developer';
-
-const typeA = () => {
-  if (a < txtA.length) {
-    document.getElementById("greeting").innerHTML += txtA.charAt(a);
-    a++;
-    setTimeout(typeA, 50);
-  }
-}
-setTimeout(function typeB () {
-    if (b < txtB.length) {
-        document.getElementById("name").innerHTML += txtB.charAt(b);
-        b++;
-        setTimeout(typeB, 70);
-      }
-}, 1500);
-setTimeout(function typeC () {
-    if (c < txtC.length) {
-        document.getElementById("full-stack").innerHTML += txtC.charAt(c);
-        c++;
-        setTimeout(typeC, 34);
-      }
-}, 2600);
 
 const openLink = (x) => {
     open("https://" + x);
@@ -181,12 +153,6 @@ const setTheme = (x) => {
         document.getElementById("melon").checked = true
     }
 }
-
-const start = () => {
-    typeA()
-}
-
-// setTheme(localStorage.getItem("theme"))
 
 ///////////////////////////////////
 // Get data from Google Sheets
