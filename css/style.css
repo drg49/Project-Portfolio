@@ -450,6 +450,12 @@ form input {
 
 }
 
+@media screen and (max-width: 450px) {
+    #about-article {
+        text-align: left;
+    }
+}
+
 @media screen and (max-width: 425px) {
     #turn-blue {
         height: 217px;
