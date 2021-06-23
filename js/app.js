@@ -181,8 +181,10 @@ $.ajax("https://spreadsheets.google.com/feeds/list/10vCKRW3pH7xYwJO6E_0_ufhaKcfv
     //When project cards load, the rest of the content will load
     document.getElementById("main-heading").style.display = "block"
     document.getElementById("about-section").style.display = "block"
-    document.getElementById("tools").style.display = "block";
-    document.getElementById("contact-heading").style.display = "block";
+    document.getElementById("tools").style.display = "block"
+    document.getElementById("contact-heading").style.display = "block"
+    document.getElementById("name").style.display = "block"
+    document.getElementById("full-stack").style.display = "block"
 
     const openModalButtons = document.querySelectorAll("[data-modal-target]")
     const closeModalButtons = document.querySelectorAll("[data-close-button]")

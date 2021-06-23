@@ -74,6 +74,7 @@ a:first-of-type {
     background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );
     display: block;
     height: 292px;
+    padding-top: 55px;
     transition: 280ms linear;
     text-align: center;
 }
@@ -83,6 +84,7 @@ a:first-of-type {
     color: white;
     font-family: 'Fjalla One', sans-serif;
     font-size: 73px;
+    display: none;
     transition: 280ms linear;
 }
 
@@ -94,11 +96,12 @@ a:first-of-type {
 
 #full-stack {
     font-size: 20px;
+    display: none;
 }
 
 #banner p:first-of-type {
     margin-bottom: 0;
-    margin-top: 40px;
+    margin-top: 12px;
     font-size: 43px;
 }
 
@@ -459,7 +462,7 @@ form input {
 @media screen and (max-width: 425px) {
     #turn-blue {
         height: 217px;
-        
+        padding-top: 26px;
     }
 
     #banner p:first-of-type {
