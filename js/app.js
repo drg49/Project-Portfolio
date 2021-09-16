@@ -155,13 +155,13 @@ const setTheme = (x) => {
     
 //Map over the data to generate a simpler/prettier data set
 const projects = [
-    // {
-    //   description: "",
-    //   giturl: "",
-    //   image: "",
-    //   liveurl: "",
-    //   projectName: ""
-    // }, 
+    {
+      description: "Search for your town in over 3500 US cities. Share posts and images with your neighbors!",
+      giturl: "https://github.com/drg49/drg49-public-repo/blob/main/README.md",
+      image: "https://i.imgur.com/8EtzKdI.png",
+      liveurl: "https://emeraldvaults.vercel.app/",
+      projectName: "The Vaults"
+    }, 
     {
       description: "Piranha is a social media app that allows you to share images with the world. It uses the MERN stack and Amazon S3.",
       giturl: "https://github.com/drg49/drg49-public-repo/blob/main/README.md",
