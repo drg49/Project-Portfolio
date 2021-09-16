@@ -1,4 +1,3 @@
-
 const openLink = (x) => {
     open("https://" + x);
 }
@@ -153,24 +152,59 @@ const setTheme = (x) => {
         document.getElementById("melon").checked = true
     }
 }
-
-///////////////////////////////////
-// Get data from Google Sheets
-///////////////////////////////////
-$.ajax("https://spreadsheets.google.com/feeds/list/10vCKRW3pH7xYwJO6E_0_ufhaKcfvna8j6HUz9hPKhbA/1/public/full?alt=json")
-//.then for when the data arrives
-.then((data) => {
     
-    //Map over the data to generate a simpler/prettier data set
-    const projects = data.feed.entry.map((item) => {
-        return {
-            description: item.gsx$description.$t,
-            giturl: item.gsx$giturl.$t,
-            image: item.gsx$image.$t,
-            liveurl: item.gsx$liveurl.$t,
-            projectName: item.gsx$project.$t
-        }
-    })
+//Map over the data to generate a simpler/prettier data set
+const projects = [
+    // {
+    //   description: "",
+    //   giturl: "",
+    //   image: "",
+    //   liveurl: "",
+    //   projectName: ""
+    // }, 
+    {
+      description: "Piranha is a social media app that allows you to share images with the world. It uses the MERN stack and Amazon S3.",
+      giturl: "https://github.com/drg49/drg49-public-repo/blob/main/README.md",
+      image: "https://i.imgur.com/b01JZ9h.png",
+      liveurl: "https://piranha-six.vercel.app/",
+      projectName: "Piranha"
+    },
+    {
+      description: "A full-stack forum app created with Ruby on Rails, PostgreSQL,  React, and Sass.",
+      giturl: "https://github.com/drg49/drg49-public-repo/blob/main/README.md",
+      image: "https://i.imgur.com/bM7UPIG.png",
+      liveurl: "https://healthylivingforums.vercel.app/",
+      projectName: "Healthy Living Forums"
+    },
+    {
+      description: "Using the MealDB API, I created an awesome recipe app with 274 meals, 274 images, and 510 total ingredients. You can search for recipes by cuisine, category, or main ingredient!",
+      giturl: "https://github.com/drg49/Instant-Recipe",
+      image: "https://i.imgur.com/l4ZKxzK.png",
+      liveurl: "https://instant-recipe.vercel.app/",
+      projectName: "Instant Recipe"
+    },
+    {
+      description: "Fun, tricky, and short quizzes made with HTML, CSS, and Vanilla JavaScript.",
+      giturl: "https://github.com/drg49/quizzie",
+      image: "https://i.imgur.com/cP0kjnL.png",
+      liveurl: "https://quizzie-pi.vercel.app/",
+      projectName: "Quizzie"
+    },
+    {
+      description: "This app is programmed completely in Vanilla JavaScript. Type your income at the top, add as many expenses as you want, and $ea Budget will tell you how much you have left over!",
+      giturl: "https://github.com/drg49/sea_budget",
+      image: "https://i.imgur.com/Hob7UWy.png",
+      liveurl: "https://sea-budget.vercel.app/",
+      projectName: "$ea Budget"
+    },
+    {
+      description: "Excited for an event to take place? Count down the days until it happens! This app was created in one day and is completely responsive in design.",
+      giturl: "https://github.com/drg49/countdown_app",
+      image: "https://i.imgur.com/lEnSm0V.png",
+      liveurl: "https://countdown-app-ddg49.vercel.app/",
+      projectName: "Countdown App"
+    },
+]
     
     const $main = $("main");
     projects.forEach((project) => {
@@ -178,13 +212,6 @@ $.ajax("https://spreadsheets.google.com/feeds/list/10vCKRW3pH7xYwJO6E_0_ufhaKcfv
         $div.html(`<project-card projectName="${project.projectName}" img="${project.image}" description="${project.description}" github="${project.giturl}" liveurl="${project.liveurl}"></project-card>`);
         $main.append($div);
     })
-    //When project cards load, the rest of the content will load
-    document.getElementById("main-heading").style.display = "block"
-    document.getElementById("about-section").style.display = "block"
-    document.getElementById("tools").style.display = "block"
-    document.getElementById("contact-heading").style.display = "block"
-    document.getElementById("name").style.display = "block"
-    document.getElementById("full-stack").style.display = "block"
 
     const openModalButtons = document.querySelectorAll("[data-modal-target]")
     const closeModalButtons = document.querySelectorAll("[data-close-button]")
@@ -222,8 +249,3 @@ $.ajax("https://spreadsheets.google.com/feeds/list/10vCKRW3pH7xYwJO6E_0_ufhaKcfv
         modal.classList.remove('active')
         overlay.classList.remove('active')
     }
-
-}).then(() => start())
-.catch((error) => {
-    console.log(error);
-})
