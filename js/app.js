@@ -152,8 +152,7 @@ const setTheme = (x) => {
         document.getElementById("melon").checked = true
     }
 }
-    
-//Map over the data to generate a simpler/prettier data set
+
 const projects = [
     {
       description: "Search for your town in over 3500 US cities. Share posts and images with your neighbors!",
