@@ -189,20 +189,6 @@ const projects = [
       liveurl: "https://quizzie-pi.vercel.app/",
       projectName: "Quizzie"
     },
-    {
-      description: "This app is programmed completely in Vanilla JavaScript. Type your income at the top, add as many expenses as you want, and $ea Budget will tell you how much you have left over!",
-      giturl: "https://github.com/drg49/sea_budget",
-      image: "https://i.imgur.com/Hob7UWy.png",
-      liveurl: "https://sea-budget.vercel.app/",
-      projectName: "$ea Budget"
-    },
-    {
-      description: "Excited for an event to take place? Count down the days until it happens! This app was created in one day and is completely responsive in design.",
-      giturl: "https://github.com/drg49/countdown_app",
-      image: "https://i.imgur.com/lEnSm0V.png",
-      liveurl: "https://countdown-app-ddg49.vercel.app/",
-      projectName: "Countdown App"
-    },
 ]
     
     const $main = $("main");
