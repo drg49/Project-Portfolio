@@ -157,35 +157,35 @@ const projects = [
     {
       description: "Search for your town in over 3500 US cities. Share posts and images with your neighbors!",
       giturl: "https://github.com/drg49/drg49-public-repo/blob/main/README.md",
-      image: "https://i.imgur.com/8EtzKdI.png",
+      image: "images/ev.png",
       liveurl: "https://emeraldvaults.vercel.app/",
       projectName: "The Vaults"
     }, 
     {
       description: "Piranha is a social media app that allows you to share images with the world. It uses the MERN stack and Amazon S3.",
       giturl: "https://github.com/drg49/drg49-public-repo/blob/main/README.md",
-      image: "https://i.imgur.com/b01JZ9h.png",
+      image: "images/piranha.png",
       liveurl: "https://piranha-six.vercel.app/",
       projectName: "Piranha"
     },
     {
       description: "A full-stack forum app created with Ruby on Rails, PostgreSQL,  React, and Sass.",
       giturl: "https://github.com/drg49/drg49-public-repo/blob/main/README.md",
-      image: "https://i.imgur.com/bM7UPIG.png",
+      image: "images/hlf.png",
       liveurl: "https://healthylivingforums.vercel.app/",
       projectName: "Healthy Living Forums"
     },
     {
       description: "Using the MealDB API, I created an awesome recipe app with 274 meals, 274 images, and 510 total ingredients. You can search for recipes by cuisine, category, or main ingredient!",
       giturl: "https://github.com/drg49/Instant-Recipe",
-      image: "https://i.imgur.com/l4ZKxzK.png",
+      image: "images/instantrecipe.png",
       liveurl: "https://instant-recipe.vercel.app/",
       projectName: "Instant Recipe"
     },
     {
       description: "Fun, tricky, and short quizzes made with HTML, CSS, and Vanilla JavaScript.",
       giturl: "https://github.com/drg49/quizzie",
-      image: "https://i.imgur.com/cP0kjnL.png",
+      image: "images/quizzie.png",
       liveurl: "https://quizzie-pi.vercel.app/",
       projectName: "Quizzie"
     },
