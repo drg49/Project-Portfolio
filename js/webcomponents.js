@@ -77,10 +77,4 @@ class ProjectCard extends HTMLElement {
     }
 }
 
-
-
-/////////////////////////////////
-// Register the HTML Tag here
-/////////////////////////////////
-
 customElements.define("project-card", ProjectCard)

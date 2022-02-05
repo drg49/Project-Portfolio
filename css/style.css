@@ -197,7 +197,7 @@ ul {
     padding-top: 19px;
 }
 
-#about {
+#about, #resume-header {
     font-family: 'Fjalla One', sans-serif;
     font-size: 50px;
     color: whitesmoke;
@@ -239,13 +239,12 @@ figcaption {
 #contact-heading {
     text-align: center;
     padding-top: 19px;
-    background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );
 }
 
 #contact {
     font-family: 'Fjalla One', sans-serif;
     font-size: 50px;
-    color: whitesmoke;
+    color: white;
     padding: 20px 0px 31px 0px;
 }
 
@@ -256,6 +255,15 @@ figcaption {
 #tools {
     padding-top: 41px;
     padding-bottom: 16px;
+}
+
+#online-resume {
+    text-align: center;
+    background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );
+}
+
+#resume-header {
+    padding-top: 40px;
 }
 
 .modals {
