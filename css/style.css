@@ -239,6 +239,7 @@ figcaption {
 #contact-heading {
     text-align: center;
     padding-top: 19px;
+    background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );
 }
 
 #contact {
@@ -255,11 +256,6 @@ figcaption {
 #tools {
     padding-top: 41px;
     padding-bottom: 16px;
-}
-
-#online-resume {
-    text-align: center;
-    background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );
 }
 
 #resume-header {
