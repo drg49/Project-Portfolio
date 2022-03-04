@@ -156,21 +156,21 @@ const setTheme = (x) => {
 const projects = [
     {
       description: "Search for your town in over 3500 US cities. Share posts and images with your neighbors!",
-      giturl: "https://github.com/drg49/drg49-public-repo/blob/main/README.md",
+      giturl: "https://github.com/drg49/private-repo/blob/main/README.md",
       image: "../images/emvaultscover.png",
       liveurl: "https://emeraldvaults.vercel.app/",
       projectName: "The Vaults"
     }, 
     {
       description: "Piranha is a social media app that allows you to share images with the world. It uses the MERN stack and Amazon S3.",
-      giturl: "https://github.com/drg49/drg49-public-repo/blob/main/README.md",
+      giturl: "https://github.com/drg49/private-repo/blob/main/README.md",
       image: "../images/testpiranha.png",
       liveurl: "https://piranha-six.vercel.app/",
       projectName: "Piranha"
     },
     {
       description: "A full-stack forum app created with Ruby on Rails, PostgreSQL,  React, and Sass.",
-      giturl: "https://github.com/drg49/drg49-public-repo/blob/main/README.md",
+      giturl: "https://github.com/drg49/private-repo/blob/main/README.md",
       image: "../images/hlfcover.png",
       liveurl: "https://healthylivingforums.vercel.app/",
       projectName: "Healthy Living Forums"
