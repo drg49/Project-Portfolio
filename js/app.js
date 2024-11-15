@@ -2,6 +2,7 @@ const openLink = (x) => {
   open('https://' + x);
 };
 
+// Set the color theme
 const setTheme = (x) => {
   localStorage.setItem('theme', x);
   const theme = localStorage.getItem('theme');
@@ -191,11 +192,12 @@ const setTheme = (x) => {
 
 const projects = [
   {
-    description: 'In 2024, I launched a small video game studio! It took me over a year to complete my first 3D video game: <i>The Movie Theater</i>. If you have a Windows/PC, you can download this game for free at neptunegamestudios.com',
+    description:
+      'In 2024, I launched a small video game studio! It took me over a year to complete my first 3D video game: <i>The Movie Theater</i>. If you have a Windows/PC, you can download this game for free at neptunegamestudios.com',
     giturl: 'https://github.com/drg49/private-repo/blob/main/README.md',
     image: '../images/neptunegamestudios.png',
     liveurl: 'https://www.neptunegamestudios.com/',
-    projectName: "Neptune Game Studios",
+    projectName: 'Neptune Game Studios',
   },
   {
     description:
