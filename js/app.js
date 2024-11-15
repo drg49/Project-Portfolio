@@ -204,7 +204,7 @@ const projects = [
     giturl: 'https://github.com/drg49/daniels-messenger-backend',
     image: '../images/dmCover.png',
     liveurl: 'https://www.pairme.chat/',
-    projectName: "Daniel's Messenger (NEW)",
+    projectName: "Daniel's Messenger",
   },
   {
     description:
