@@ -2,7 +2,6 @@ const openLink = (x) => {
   open('https://' + x);
 };
 
-// Set the color theme
 const setTheme = (x) => {
   localStorage.setItem('theme', x);
   const theme = localStorage.getItem('theme');
