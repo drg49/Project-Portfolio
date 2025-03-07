@@ -145,23 +145,13 @@
     <div class="container-fluid">
       <div class="row" id="contact-heading">
         <div class="col-md-12" id="contact-row">
-            <h1 id="contact">Links</h1>
-            <!-- <form id="contact-form" action="https://formsubmit.co/drgsucceed@gmail.com" method="POST">
-              <label class="form-label" for="formName">Name</label><br />
-              <input type="text" name="name" id="formName" /><br />
-              <label class="form-label" for="formName">Email</label><br />
-              <input type="email" name="email" required /><br />
-              <label class="form-label" for="formMessage">Message</label><br />
-              <textarea type="text" name="message" id="formMessage"></textarea><br />
-              <div id="btn">
-                <button id="send-email" type="submit"><i class="fas fa-paper-plane"></i> &nbsp Send</button>
-              </div>
-            </form> -->
+            <h1 id="contact">Links</h1>       
             <section id="social-media">
               <a href="https://www.linkedin.com/in/daniel-g-b5b9451a3/" target="_blank"><i class="fab fa-linkedin" id="linked-in" title="LinkedIn"></i></a>
               <a href="https://github.com/drg49" target="_blank"><i class="fab fa-github" id="github" title="Github"></i></a>
-              <!-- <a href="https://drive.google.com/file/d/194jryD9IGOADBk2bhlMuYU_8y2zPfea5/view?usp=sharing" target="_blank"><i class="fas fa-file" id="resume" title="Resume"></i></a> -->
+              <a href="#" data-bs-toggle="modal" data-bs-target="#pdfModal"><i class="fas fa-file" id="resume" title="Resume"></i></a>
             </section>
+            <br/>
         </div>
       </div>
     </div>
@@ -178,6 +168,22 @@
           <li data-close-button class="close-button"><a href="#contact">Links</a></li>
         </div>
       </div>
+
+      <!-- PDF Modal -->
+      <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="pdfModalLabel">Resume</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <iframe src="Daniel Gavin Resume 2025.pdf" width="100%" height="500px"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <div id="overlay"></div> 
   </body>
 </html>
