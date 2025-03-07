@@ -214,13 +214,13 @@ const projects = [
     liveurl: "https://piranha-six.vercel.app/",
     projectName: "Piranha",
   },
-  {
-    description: "A full-stack forum app created with Ruby on Rails, PostgreSQL,  React, and Sass.",
-    giturl: "https://github.com/drg49/private-repo/blob/main/README.md",
-    image: "../images/hlfcover.png",
-    liveurl: "https://healthylivingforums.vercel.app/",
-    projectName: "Healthy Living Forums"
-  },
+  // {
+  //   description: "A full-stack forum app created with Ruby on Rails, PostgreSQL,  React, and Sass.",
+  //   giturl: "https://github.com/drg49/private-repo/blob/main/README.md",
+  //   image: "../images/hlfcover.png",
+  //   liveurl: "https://healthylivingforums.vercel.app/",
+  //   projectName: "Healthy Living Forums"
+  // },
   {
     description:
       "Using the MealDB API, I created an amazing recipe app with over 250 meals. You can search for recipes by cuisine, category, or main ingredient!",
