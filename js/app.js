@@ -192,11 +192,11 @@ const setTheme = (x) => {
 const projects = [
   {
     description:
-      "In 2022, I began developing my first 3D video game titled <i>The Movie Theater</i>. The project took over a year to complete and was programmed using C# in Unity3D. Windows/PC users can download it for free at neptunegamestudios.com",
-    giturl: "https://github.com/drg49/Movie-Theater-Game",
-    image: "../images/neptunegamestudios.png",
-    liveurl: "https://www.neptunegamestudios.com/",
-    projectName: "Neptune Game Studios",
+      "Search for your town in over 3500 US cities. Share posts and images with your neighbors!",
+    giturl: "https://github.com/drg49/private-repo/blob/main/README.md",
+    image: "../images/emvaultscover.png",
+    liveurl: "https://emeraldvaults.vercel.app/",
+    projectName: "The Vaults",
   },
   {
     description:
@@ -208,27 +208,19 @@ const projects = [
   },
   {
     description:
-      "Search for your town in over 3500 US cities. Share posts and images with your neighbors!",
-    giturl: "https://github.com/drg49/private-repo/blob/main/README.md",
-    image: "../images/emvaultscover.png",
-    liveurl: "https://emeraldvaults.vercel.app/",
-    projectName: "The Vaults",
-  },
-  {
-    description:
       "Piranha is a social media app that allows you to share images with the world. It uses the MERN stack and Amazon S3.",
     giturl: "https://github.com/drg49/private-repo/blob/main/README.md",
     image: "../images/testpiranha.png",
     liveurl: "https://piranha-six.vercel.app/",
     projectName: "Piranha",
   },
-  // {
-  //   description: "A full-stack forum app created with Ruby on Rails, PostgreSQL,  React, and Sass.",
-  //   giturl: "https://github.com/drg49/private-repo/blob/main/README.md",
-  //   image: "../images/hlfcover.png",
-  //   liveurl: "https://healthylivingforums.vercel.app/",
-  //   projectName: "Healthy Living Forums"
-  // },
+  {
+    description: "A full-stack forum app created with Ruby on Rails, PostgreSQL,  React, and Sass.",
+    giturl: "https://github.com/drg49/private-repo/blob/main/README.md",
+    image: "../images/hlfcover.png",
+    liveurl: "https://healthylivingforums.vercel.app/",
+    projectName: "Healthy Living Forums"
+  },
   {
     description:
       "Using the MealDB API, I created an amazing recipe app with over 250 meals. You can search for recipes by cuisine, category, or main ingredient!",
@@ -236,14 +228,6 @@ const projects = [
     image: "../images/ircover.png",
     liveurl: "https://instant-recipe.vercel.app/",
     projectName: "Instant Recipe",
-  },
-  {
-    description:
-      "Fun, tricky, and short quizzes made with HTML, CSS, and JavaScript.",
-    giturl: "https://github.com/drg49/quizzie",
-    image: "../images/quizziecover.png",
-    liveurl: "https://quizzie-pi.vercel.app/",
-    projectName: "Quizzie",
   },
 ];
 
