@@ -203,7 +203,7 @@ const projects = [
       "A messenger app created with Socket.io and React. Send the link to a friend to begin chatting!",
     giturl: "https://github.com/drg49/daniels-messenger-backend",
     image: "../images/dmCover.png",
-    liveurl: "https://www.pairme.chat/",
+    liveurl: "https://stranger-chat.vercel.app/",
     projectName: "Daniel's Messenger",
   },
   {
