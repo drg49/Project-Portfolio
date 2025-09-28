@@ -192,18 +192,18 @@ const setTheme = (x) => {
 const projects = [
   {
     description:
-      "Search for your town in over 3500 US cities. Share posts and images with your neighbors!",
-    giturl: "https://github.com/drg49/Emerald-Vaults-Backend",
-    image: "../images/emvaultscover.png",
-    liveurl: "https://emeraldvaults.vercel.app/",
-    projectName: "The Vaults",
+      "Share posts and images with your neighbors in over 3500+ cities in the US & Canada!",
+    giturl: "https://github.com/drg49/Neighborly-App-Backend",
+    image: "../images/neighborlyCover.jpg",
+    liveurl: "https://the-neighborly-app.vercel.app/",
+    projectName: "The Neighborly App",
   },
   {
     description:
       "A messenger app created with Socket.io and React. Send the link to a friend to begin chatting!",
     giturl: "https://github.com/drg49/daniels-messenger-backend",
     image: "../images/dmCover.png",
-    liveurl: "https://stranger-chat.vercel.app/",
+    liveurl: "https://daniels-messenger.vercel.app/",
     projectName: "Daniel's Messenger",
   },
   {
