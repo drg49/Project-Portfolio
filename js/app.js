@@ -211,8 +211,8 @@ const projects = [
       'Neptune Game Studios is an indie game studio I started. My featured game, The Movie Theater, tells a slightly spooky and mysterious story in a unique world. Built with the C# programming language, this 3D game can be downloaded directly from the website.',
     giturl: 'https://github.com/drg49/neptune-game-studios-frontend',
     image: '../images/neptunegamestudios.png',
-    liveurl: 'neptune-game-studios.vercel.app',
-    projectName: "Neptune Game Studios",
+    liveurl: 'https://neptune-game-studios.vercel.app/',
+    projectName: 'Neptune Game Studios',
   },
   {
     description:
