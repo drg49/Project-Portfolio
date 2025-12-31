@@ -68,7 +68,7 @@ class ProjectCard extends HTMLElement {
         <a href=${this.getAttribute("liveurl")} target="_blank"><p>${this.getAttribute("description")}</p></a>
         <div id="dropdown">
         <div class="dropdown-content">
-            <a href=${this.getAttribute("github")} target="blank">Check it out on Github</a>
+            <a href=${this.getAttribute("github")} target="blank">View code on Github</a>
         </div>
         </div>
 
