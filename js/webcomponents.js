@@ -1,11 +1,11 @@
 //PROJECT CARD COMPONENT
 class ProjectCard extends HTMLElement {
-    constructor(){
-        super()
-        
-        this.attachShadow({mode: "open"})
-        
-        const style = `
+  constructor() {
+    super();
+
+    this.attachShadow({ mode: 'open' });
+
+    const style = `
         <style>
             .boxcard {
                 width: 350px;
@@ -36,7 +36,7 @@ class ProjectCard extends HTMLElement {
              height: 168px;
              padding: 10px;
              color: white; 
-             text-align: center;
+             text-align: left;
             }
             #dropdown {
                 border-top:1px solid;
@@ -58,23 +58,33 @@ class ProjectCard extends HTMLElement {
             }
 
         </style>
-        `
-        this.shadowRoot.innerHTML = `
+        `;
+    this.shadowRoot.innerHTML = `
         ${style}
         <div class="boxcard">
 
-        <a href=${this.getAttribute("liveurl")} target="_blank"><h2>${this.getAttribute("projectName")}</h2></a>
-        <a href=${this.getAttribute("liveurl")} target="_blank"><img src=${this.getAttribute("img")} alt="An image of Daniel's website"></a>
-        <a href=${this.getAttribute("liveurl")} target="_blank"><p>${this.getAttribute("description")}</p></a>
+        <a href=${this.getAttribute(
+          'liveurl'
+        )} target="_blank"><h2>${this.getAttribute('projectName')}</h2></a>
+        <a href=${this.getAttribute(
+          'liveurl'
+        )} target="_blank"><img src=${this.getAttribute(
+      'img'
+    )} alt="An image of Daniel's website"></a>
+        <a href=${this.getAttribute(
+          'liveurl'
+        )} target="_blank"><p>${this.getAttribute('description')}</p></a>
         <div id="dropdown">
         <div class="dropdown-content">
-            <a href=${this.getAttribute("github")} target="blank">View code on Github</a>
+            <a href=${this.getAttribute(
+              'github'
+            )} target="blank">View code on Github</a>
         </div>
         </div>
 
         </div>
-        `
-    }
+        `;
+  }
 }
 
-customElements.define("project-card", ProjectCard)
+customElements.define('project-card', ProjectCard);

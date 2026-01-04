@@ -208,19 +208,19 @@ const projects = [
   },
   {
     description:
-      'Neptune Game Studios is an independent game studio I founded. My 3D game, <i>The Movie Theater</i>, was built with C# and has over 50 downloads since December 2025. I also build interactive games for training courses, making learning more engaging and fun!',
-    giturl: 'https://github.com/drg49/Movie-Theater-Game',
-    image: '../images/neptunegamestudios.png',
-    liveurl: 'https://neptune-game-studios.vercel.app/',
-    projectName: 'Neptune Game Studios',
-  },
-  {
-    description:
       'Piranha is a social media app that allows you to share images with the world. It uses the MERN stack and Amazon S3.',
     giturl: 'https://github.com/drg49/piranha-backend',
     image: '../images/piranha.png',
     liveurl: 'https://piranha-six.vercel.app/',
     projectName: 'Piranha',
+  },
+  {
+    description:
+      'A portfolio of my Unity3D projects built with C#. These projects showcase interactive 3D systems, gameplay mechanics, and experiences that have been played by users online.',
+    giturl: 'https://github.com/drg49/Movie-Theater-Game',
+    image: '../images/neptunegamestudios.png',
+    liveurl: 'https://neptune-game-studios.vercel.app/',
+    projectName: 'Neptune Game Studios',
   },
   // {
   //   description: "A full-stack forum app created with Ruby on Rails, PostgreSQL,  React, and Sass.",
