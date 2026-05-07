@@ -208,27 +208,20 @@ const projects = [
   },
   {
     description:
-      'Piranha is a social media app that allows you to share images with the world. It uses the MERN stack and Amazon S3.',
-    giturl: 'https://github.com/drg49/piranha-backend',
-    image: '../images/piranha.png',
-    liveurl: 'https://piranha-six.vercel.app/',
-    projectName: 'Piranha',
-  },
-  {
-    description:
       'A portfolio of my Unity3D projects built with C#. These projects showcase interactive 3D systems, gameplay mechanics, and experiences that have been played by users online.',
     giturl: 'https://github.com/drg49/Movie-Theater-Game',
     image: '../images/neptunegamestudios.png',
     liveurl: 'https://neptune-game-studios.vercel.app/',
     projectName: 'Neptune Game Studios',
   },
-  // {
-  //   description: "A full-stack forum app created with Ruby on Rails, PostgreSQL,  React, and Sass.",
-  //   giturl: "https://github.com/drg49/Healthy-Living-Forums-Backend",
-  //   image: "../images/hlfcover.png",
-  //   liveurl: "https://healthylivingforums.vercel.app/",
-  //   projectName: "Healthy Living Forums"
-  // },
+  {
+    description:
+      'Piranha is a social media app that allows you to share images with the world. It uses the MERN stack and Amazon S3.',
+    giturl: 'https://github.com/drg49/piranha-backend',
+    image: '../images/piranha.png',
+    liveurl: 'https://piranha-six.vercel.app/',
+    projectName: 'Piranha',
+  },
   {
     description:
       'Using the MealDB API, I created an amazing recipe app with over 250 meals. You can search for recipes by cuisine, category, or main ingredient!',
