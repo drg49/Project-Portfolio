@@ -212,7 +212,6 @@ ul {
 #about-flex {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
   max-width: 1695px;
   margin: auto;
