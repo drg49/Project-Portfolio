@@ -17,11 +17,11 @@ const setTheme = (x) => {
       function () {
         $(this).css('color', 'black');
         $(this).css('textShadow', 'none');
-      }
+      },
     );
     $('#turn-blue, #about-section, #contact-heading').css(
       'background-image',
-      'linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% )'
+      'linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% )',
     );
     $('#name, #greeting, #full-stack').css('color', 'white');
     $('#fet, #bet').css('color', 'white');
@@ -45,7 +45,7 @@ const setTheme = (x) => {
         function () {
           $(this).css('color', 'black');
           $(this).css('textShadow', 'none');
-        }
+        },
       );
     }
     document.getElementById('blue').checked = true;
@@ -62,11 +62,11 @@ const setTheme = (x) => {
       function () {
         $(this).css('color', 'white');
         $(this).css('textShadow', 'none');
-      }
+      },
     );
     $('#turn-blue, #about-section, #contact-heading').css(
       'background-image',
-      'linear-gradient(90deg, rgba(58,27,152,1) 25%, rgba(46,2,172,1) 71%)'
+      'linear-gradient(90deg, rgba(58,27,152,1) 25%, rgba(46,2,172,1) 71%)',
     );
     $('#name, #greeting, #full-stack').css('color', 'white');
     $('#fet, #bet').css('color', 'white');
@@ -90,7 +90,7 @@ const setTheme = (x) => {
         function () {
           $(this).css('color', 'white');
           $(this).css('textShadow', 'none');
-        }
+        },
       );
     }
     document.getElementById('dark').checked = true;
@@ -107,11 +107,11 @@ const setTheme = (x) => {
       function () {
         $(this).css('color', 'black');
         $(this).css('textShadow', 'none');
-      }
+      },
     );
     $('#turn-blue, #about-section, #contact-heading').css(
       'background-image',
-      'linear-gradient(90deg, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 71%)'
+      'linear-gradient(90deg, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 71%)',
     );
     $('#name, #greeting, #full-stack').css('color', 'yellow');
     $('#fet, #bet').css('color', 'black');
@@ -136,7 +136,7 @@ const setTheme = (x) => {
         function () {
           $(this).css('color', 'black');
           $(this).css('textShadow', 'none');
-        }
+        },
       );
     }
     document.getElementById('bee').checked = true;
@@ -153,11 +153,11 @@ const setTheme = (x) => {
       function () {
         $(this).css('color', 'black');
         $(this).css('textShadow', 'none');
-      }
+      },
     );
     $('#turn-blue, #about-section, #contact-heading').css(
       'background-image',
-      'linear-gradient(90deg, rgba(0,150,111,1) 0%, rgba(21,114,65,1) 71%)'
+      'linear-gradient(90deg, rgba(0,150,111,1) 0%, rgba(21,114,65,1) 71%)',
     );
     $('#name, #greeting, #full-stack').css('color', 'black');
     $('#fet, #bet').css('color', 'black');
@@ -182,7 +182,7 @@ const setTheme = (x) => {
         function () {
           $(this).css('color', 'black');
           $(this).css('textShadow', 'none');
-        }
+        },
       );
     }
     document.getElementById('melon').checked = true;
@@ -190,6 +190,14 @@ const setTheme = (x) => {
 };
 
 const projects = [
+  {
+    description:
+      'An AI-powered contract analysis platform that uses RAG and vector search to analyze uploaded contracts, identify potential risks and missing protections, and provide evidence-backed recommendations. Built with React, Flask, PostgreSQL/pgvector, AWS S3, and Google Gemini.',
+    giturl: 'https://github.com/drg49/clause-iq-be',
+    image: '../images/clauseiqcover.png',
+    liveurl: 'https://clause-iq-psi.vercel.app/',
+    projectName: 'Clause IQ',
+  },
   {
     description:
       'Share posts and images with your neighbors in over 3500+ cities in the US & Canada!',
@@ -236,7 +244,7 @@ const $main = $('main');
 projects.forEach((project) => {
   const $div = $('<div>');
   $div.html(
-    `<project-card projectName="${project.projectName}" img="${project.image}" description="${project.description}" github="${project.giturl}" liveurl="${project.liveurl}"></project-card>`
+    `<project-card projectName="${project.projectName}" img="${project.image}" description="${project.description}" github="${project.giturl}" liveurl="${project.liveurl}"></project-card>`,
   );
   $main.append($div);
 });
