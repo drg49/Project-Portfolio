@@ -192,11 +192,11 @@ const setTheme = (x) => {
 const projects = [
   {
     description:
-      'An AI-powered contract analysis platform that uses RAG and vector search to analyze uploaded contracts, identify potential risks and missing protections, and provide evidence-backed recommendations. Built with React, Flask, PostgreSQL/pgvector, AWS S3, and Google Gemini.',
+      'An AI-powered contract analysis platform that uses RAG and vector search to analyze uploaded contracts, identify potential risks, and provide recommendations. Built with React, Flask, PostgreSQL/pgvector, AWS S3, and Google Gemini.',
     giturl: 'https://github.com/drg49/clause-iq-be',
-    image: '../images/clauseiqcover.png',
+    image: '../images/clauseiqcover.jpg',
     liveurl: 'https://clause-iq-psi.vercel.app/',
-    projectName: 'Clause IQ',
+    projectName: 'Clause IQ (NEW)',
   },
   {
     description:
@@ -224,7 +224,7 @@ const projects = [
   },
   {
     description:
-      'Piranha is a social media app that allows you to share images with the world. It uses the MERN stack and Amazon S3.',
+      'Piranha is a social media app that allows you to share images with the world. It uses the MERN stack and AWS S3.',
     giturl: 'https://github.com/drg49/piranha-backend',
     image: '../images/piranha.png',
     liveurl: 'https://piranha-six.vercel.app/',
