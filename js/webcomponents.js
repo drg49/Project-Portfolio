@@ -116,7 +116,7 @@ class ProjectCard extends HTMLElement {
             }
             p {
              margin: 0;
-             height: 130px;
+             height: 80px;
              padding: 10px;
              color: var(--card-text); 
              text-align: left;

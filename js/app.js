@@ -223,7 +223,7 @@ const projects = [
   },
   {
     description:
-      'A portfolio of my Unity3D projects built with C#. These projects showcase interactive 3D systems, gameplay mechanics, and experiences that have been played by users online.',
+      'A portfolio of my Unity 3D projects built with the C# programming language.',
     giturl: 'https://github.com/drg49/Movie-Theater-Game',
     image: '../images/neptunegamestudios.png',
     liveurl: 'https://neptune-game-studios.vercel.app/',
@@ -241,7 +241,7 @@ const projects = [
   },
   {
     description:
-      'Using the MealDB API, I created an amazing recipe app with over 250 meals. You can search for recipes by cuisine, category, or main ingredient!',
+      'Using React and the MealDB API, I created an amazing recipe app with over 250 meals.',
     giturl: 'https://github.com/drg49/Instant-Recipe',
     image: '../images/ircover.png',
     liveurl: 'https://instant-recipe.vercel.app/',
