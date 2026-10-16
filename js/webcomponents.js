@@ -114,9 +114,18 @@ class ProjectCard extends HTMLElement {
               cursor: pointer;
             }
             .repository-link {
+              gap: 8px;
+              border-color: #57606a;
+              background: #24292f;
+              color: white;
+              font-weight: 600;
               text-decoration: none;
             }
-            .repository-link:hover,
+            .repository-link:hover {
+              border-color: #57606a;
+              background: #32383f;
+              color: white;
+            }
             .modal-close:hover {
               background: #edf3f5;
             }
@@ -151,6 +160,7 @@ class ProjectCard extends HTMLElement {
         </style>
         `;
     this.shadowRoot.innerHTML = `
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         ${style}
         <div class="boxcard">
 
@@ -174,7 +184,7 @@ class ProjectCard extends HTMLElement {
             <div class="modal-header">
                 <h2 id="details-title">${this.getAttribute('projectName')}</h2>
               <div class="modal-actions">
-                <a class="repository-link" href="${this.getAttribute('github')}" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                <a class="repository-link" href="${this.getAttribute('github')}" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub Repository</span></a>
                 <button class="modal-close" type="button">Close</button>
               </div>
             </div>
