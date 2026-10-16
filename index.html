@@ -241,7 +241,7 @@
     </template>
     <template id="details-messenger">
       <p>
-        The main purpose of this application was to showcase browser push notifications. The functionality in this project can also be used to introduce chat capabilities into other web applications. To keep things simple, users can only send text messages, and there is no database or authentication. Each user is assigned a random username and paired with another random user to start a chat. Users can end a chat or skip to another user at any time. This app is optimized for mobile browsers, where chat applications are most commonly used.
+        The main purpose of this application was to showcase browser push notifications. The functionality in this project can also be used to introduce chat capabilities into other web applications. To keep things simple, users can only send text messages, and there is no database or authentication. This app is optimized for mobile browsers, where chat applications are most commonly used.
       </p>
       <br />
       <img
@@ -252,6 +252,37 @@
       <p>
         The frontend is built with React, and the backend uses Node.js, Express, and Socket.IO to handle real-time communication. When a user connects, the server places them in a waiting list until another user is available. Once paired, messages are sent through the server and delivered to the other user instantly. Messages are not stored in a database, so conversations are lost when the page is refreshed or the connection ends. The app also includes typing indicators and automatically scrolls to the latest message as the conversation continues.
       </p>
+      <section class="chat-flow" aria-label="Messenger application flow">
+        <div class="chat-flow-step chat-flow-step--dark">
+          <i class="fa fa-desktop" aria-hidden="true"></i>
+          <h4>1. React Frontend</h4>
+          <p>User opens the app, receives a random username, and connects through Socket.IO Client.</p>
+        </div>
+        <i class="fa fa-arrow-down chat-flow-arrow" aria-hidden="true"></i>
+        <div class="chat-flow-step chat-flow-step--server">
+          <i class="fa fa-server" aria-hidden="true"></i>
+          <h4>2. Node.js + Express Server</h4>
+          <p>Socket.IO handles connections and adds unmatched users to an in-memory waiting queue.</p>
+        </div>
+        <i class="fa fa-arrow-down chat-flow-arrow" aria-hidden="true"></i>
+        <div class="chat-flow-step chat-flow-step--matching">
+          <i class="fa fa-users" aria-hidden="true"></i>
+          <h4>3. Random User Matching</h4>
+          <p>When two users are waiting, the server pairs their socket IDs and removes them from the queue.</p>
+        </div>
+        <i class="fa fa-arrow-down chat-flow-arrow" aria-hidden="true"></i>
+        <div class="chat-flow-step chat-flow-step--chat">
+          <i class="fa fa-comment-o" aria-hidden="true"></i>
+          <h4>4. Real-Time Chat</h4>
+          <p>Messages and typing indicators travel through the server to the paired user. The frontend updates the conversation and scrolls to the latest message.</p>
+        </div>
+        <i class="fa fa-arrow-down chat-flow-arrow" aria-hidden="true"></i>
+        <div class="chat-flow-step chat-flow-step--dark">
+          <i class="fa fa-refresh" aria-hidden="true"></i>
+          <h4>5. Chat Controls</h4>
+          <p>Users can end a conversation, skip to another match, or reconnect if their partner disconnects.</p>
+        </div>
+      </section>
     </template>
     <template id="details-neptune">
       <p>

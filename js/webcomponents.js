@@ -249,6 +249,12 @@ class ProjectCard extends HTMLElement {
                 flex-wrap: wrap;
                 gap: 12px;
               }
+              .chat-flow {
+                padding: 10px;
+              }
+              .chat-flow-step {
+                padding: 12px 10px;
+              }
             }
             .modal-body {
               padding: 22px;
@@ -258,6 +264,58 @@ class ProjectCard extends HTMLElement {
             }
             .modal-body h3 {
               color: var(--modal-title);
+            }
+            .chat-flow {
+              margin: 14px 0;
+              padding: 14px 16px;
+              border: 1px solid #303030;
+              border-radius: 10px;
+              background: #050505;
+              color: #f5f5f5;
+              text-align: center;
+            }
+            .chat-flow-step {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 8px;
+              padding: 12px 16px;
+              border-radius: 8px;
+              color: #101820;
+            }
+            .chat-flow-step--dark {
+              border: 1px solid #303030;
+              color: #f5f5f5;
+            }
+            .chat-flow-step--server {
+              background: #e4efff;
+            }
+            .chat-flow-step--matching {
+              background: #fff0d6;
+            }
+            .chat-flow-step--chat {
+              background: #def3e4;
+            }
+            .chat-flow-step > i {
+              font-size: 16px;
+            }
+            .chat-flow-step h4 {
+              margin: 0;
+              color: inherit;
+              font-size: 15px;
+              font-weight: 600;
+            }
+            .chat-flow-step p {
+              height: auto;
+              margin: 0;
+              padding: 0;
+              color: inherit;
+              text-align: center;
+            }
+            .chat-flow-arrow {
+              display: block;
+              margin: 8px auto;
+              color: #dedede;
             }
             .modal-body pre {
               padding: 16px;
