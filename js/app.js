@@ -197,6 +197,7 @@ const projects = [
     image: '../images/clauseiqcover.jpg',
     liveurl: 'https://clause-iq-psi.vercel.app/',
     projectName: 'Clause IQ (NEW)',
+    detailsTemplate: 'details-clause-iq',
   },
   {
     description:
@@ -205,6 +206,7 @@ const projects = [
     image: '../images/neighborlyCover.jpg',
     liveurl: 'https://the-neighborly-app.vercel.app/',
     projectName: 'The Neighborly App',
+    detailsTemplate: 'details-neighborly',
   },
   {
     description:
@@ -213,6 +215,7 @@ const projects = [
     image: '../images/dmCover.png',
     liveurl: 'https://daniels-messenger.vercel.app/',
     projectName: "Daniel's Messenger",
+    detailsTemplate: 'details-messenger',
   },
   {
     description:
@@ -221,6 +224,7 @@ const projects = [
     image: '../images/neptunegamestudios.png',
     liveurl: 'https://neptune-game-studios.vercel.app/',
     projectName: 'Neptune Game Studios',
+    detailsTemplate: 'details-neptune',
   },
   {
     description:
@@ -229,6 +233,7 @@ const projects = [
     image: '../images/piranha.png',
     liveurl: 'https://piranha-six.vercel.app/',
     projectName: 'Piranha',
+    detailsTemplate: 'details-piranha',
   },
   {
     description:
@@ -237,6 +242,7 @@ const projects = [
     image: '../images/ircover.png',
     liveurl: 'https://instant-recipe.vercel.app/',
     projectName: 'Instant Recipe',
+    detailsTemplate: 'details-instant-recipe',
   },
 ];
 
@@ -244,7 +250,7 @@ const $main = $('main');
 projects.forEach((project) => {
   const $div = $('<div>');
   $div.html(
-    `<project-card projectName="${project.projectName}" img="${project.image}" description="${project.description}" github="${project.giturl}" liveurl="${project.liveurl}"></project-card>`,
+    `<project-card projectName="${project.projectName}" img="${project.image}" description="${project.description}" github="${project.giturl}" liveurl="${project.liveurl}" details-template="${project.detailsTemplate}"></project-card>`,
   );
   $main.append($div);
 });
