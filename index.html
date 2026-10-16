@@ -241,8 +241,16 @@
     </template>
     <template id="details-messenger">
       <p>
-        Project details placeholder for Daniel's Messenger. Replace this with
-        your project HTML.
+        The main purpose of this application was to showcase browser push notifications. The functionality in this project can also be used to introduce chat capabilities into other web applications. To keep things simple, users can only send text messages, and there is no database or authentication. Each user is assigned a random username and paired with another random user to start a chat. Users can end a chat or skip to another user at any time. This app is optimized for mobile browsers, where chat applications are most commonly used.
+      </p>
+      <br />
+      <img
+        src="images/dan-mess-1.png"
+        alt="Example chat for Messenger application"
+      />
+      <h3>How does it work?</h3>
+      <p>
+        The frontend is built with React, and the backend uses Node.js, Express, and Socket.IO to handle real-time communication. When a user connects, the server places them in a waiting list until another user is available. Once paired, messages are sent through the server and delivered to the other user instantly. Messages are not stored in a database, so conversations are lost when the page is refreshed or the connection ends. The app also includes typing indicators and automatically scrolls to the latest message as the conversation continues.
       </p>
     </template>
     <template id="details-neptune">
