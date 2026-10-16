@@ -1,4 +1,59 @@
 //PROJECT CARD COMPONENT
+const projectCardThemes = {
+  1: {
+    cardStart: '#005d92',
+    cardEnd: '#007f72',
+    cardBorder: '#087d91',
+    cardText: '#ffffff',
+    modalBackground: '#082b3b',
+    modalHeader: '#06445b',
+    modalBorder: '#187388',
+    modalText: '#d8f5f7',
+    modalTitle: '#ffffff',
+    accent: '#1fa1b8',
+    accentHover: '#167f92',
+  },
+  2: {
+    cardStart: '#3a1b98',
+    cardEnd: '#2e02ac',
+    cardBorder: '#6848bb',
+    cardText: '#ffffff',
+    modalBackground: '#160d2b',
+    modalHeader: '#241546',
+    modalBorder: '#4b3274',
+    modalText: '#e9ddff',
+    modalTitle: '#ffffff',
+    accent: '#8250df',
+    accentHover: '#6840b5',
+  },
+  3: {
+    cardStart: '#111111',
+    cardEnd: '#292600',
+    cardBorder: '#8a7900',
+    cardText: '#fffbd1',
+    modalBackground: '#111111',
+    modalHeader: '#252000',
+    modalBorder: '#807600',
+    modalText: '#fffbd1',
+    modalTitle: '#fff200',
+    accent: '#b39b00',
+    accentHover: '#8f7b00',
+  },
+  4: {
+    cardStart: '#00966f',
+    cardEnd: '#157241',
+    cardBorder: '#48a97b',
+    cardText: '#ffffff',
+    modalBackground: '#073b2d',
+    modalHeader: '#10553e',
+    modalBorder: '#36805f',
+    modalText: '#e6fff0',
+    modalTitle: '#baffd4',
+    accent: '#2da675',
+    accentHover: '#23845d',
+  },
+};
+
 class ProjectCard extends HTMLElement {
   constructor() {
     super();
@@ -7,23 +62,36 @@ class ProjectCard extends HTMLElement {
 
     const style = `
         <style>
+            :host {
+              --card-start: #005d92;
+              --card-end: #007f72;
+              --card-border: #087d91;
+              --card-text: #ffffff;
+              --modal-background: #082b3b;
+              --modal-header: #06445b;
+              --modal-border: #187388;
+              --modal-text: #d8f5f7;
+              --modal-title: #ffffff;
+              --theme-accent: #1fa1b8;
+              --theme-accent-hover: #167f92;
+            }
             .boxcard {
               width: min(350px, calc(100vw - 40px));
                 text-align: center;
-                border: 1px solid;
+                border: 1px solid var(--card-border);
                 border-radius: 9px;
                 margin-top: 14px;
                 margin-left: 10px;
                 margin-right: 10px;
                 margin-bottom: 28px;
-                background-color: #005d92;
-                background-image: linear-gradient(160deg, #005d92 0%, #007f72 100%);
+                background-color: var(--card-start);
+                background-image: linear-gradient(160deg, var(--card-start) 0%, var(--card-end) 100%);
             }
             .boxcard:hover {
-                box-shadow: 0 0 10px #ccc;
+              box-shadow: 0 0 10px var(--theme-accent);
             }
             h2 {
-                color: white;
+              color: var(--card-text);
             }
             img {
                 width: 100%;
@@ -40,11 +108,11 @@ class ProjectCard extends HTMLElement {
              margin: 0;
              height: 130px;
              padding: 10px;
-             color: white; 
+             color: var(--card-text); 
              text-align: left;
             }
             #dropdown {
-                border-top:1px solid;
+              border-top: 1px solid var(--card-border);
             }
             .dropdown-content {
                 padding-bottom: 5px;
@@ -54,12 +122,12 @@ class ProjectCard extends HTMLElement {
               padding: 0;
               border: 0;
               background: transparent;
-              color: lightblue;
+              color: var(--theme-accent);
               cursor: pointer;
               font: inherit;
             }
             .details-trigger:hover {
-              color: lightskyblue;
+              color: var(--theme-accent-hover);
             }
             .details-modal {
               width: min(900px, calc(100vw - 32px));
@@ -67,10 +135,10 @@ class ProjectCard extends HTMLElement {
               max-height: 85vh;
               padding: 0;
               overflow: auto;
-              border: 1px solid #30363d;
+              border: 1px solid var(--modal-border);
               border-radius: 8px;
-              color: #c9d1d9;
-              background: #0d1117;
+              color: var(--modal-text);
+              background: var(--modal-background);
               box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
             }
             .details-modal::backdrop {
@@ -85,13 +153,13 @@ class ProjectCard extends HTMLElement {
               justify-content: space-between;
               gap: 16px;
               padding: 16px 22px;
-              border-bottom: 1px solid #30363d;
-              background: #161b22;
+              border-bottom: 1px solid var(--modal-border);
+              background: var(--modal-header);
             }
             .modal-header h2 {
               min-width: 0;
               margin: 0;
-              color: #f0f6fc;
+              color: var(--modal-title);
               text-align: left;
             }
             .modal-actions {
@@ -116,15 +184,15 @@ class ProjectCard extends HTMLElement {
               cursor: pointer;
             }
             .view-link {
-              border-color: #0969da;
-              background: #0969da;
+              border-color: var(--theme-accent);
+              background: var(--theme-accent);
               color: white;
               font-weight: 600;
               text-decoration: none;
             }
             .view-link:hover {
-              border-color: #0550ae;
-              background: #0550ae;
+              border-color: var(--theme-accent-hover);
+              background: var(--theme-accent-hover);
               color: white;
             }
             .repository-link {
@@ -141,13 +209,13 @@ class ProjectCard extends HTMLElement {
               color: white;
             }
             .modal-close {
-              border-color: #c9363e;
-              background: #c9363e;
+              border-color: var(--theme-accent);
+              background: var(--theme-accent);
               color: white;
             }
             .modal-close:hover {
-              border-color: #a40e26;
-              background: #a40e26;
+              border-color: var(--theme-accent-hover);
+              background: var(--theme-accent-hover);
               color: white;
             }
             .view-link:focus-visible,
@@ -173,11 +241,11 @@ class ProjectCard extends HTMLElement {
             .modal-body {
               padding: 22px;
               overflow-wrap: anywhere;
-              color: #c9d1d9;
+              color: var(--modal-text);
               text-align: left;
             }
             .modal-body h3 {
-              color: #f0f6fc;
+              color: var(--modal-title);
             }
             .modal-body p {
               height: auto;
@@ -253,6 +321,27 @@ class ProjectCard extends HTMLElement {
       .addEventListener('click', () => dialog.close());
     dialog.addEventListener('click', (event) => {
       if (event.target === dialog) dialog.close();
+    });
+  }
+
+  setTheme(theme) {
+    const palette = projectCardThemes[theme] || projectCardThemes['1'];
+    const properties = {
+      '--card-start': palette.cardStart,
+      '--card-end': palette.cardEnd,
+      '--card-border': palette.cardBorder,
+      '--card-text': palette.cardText,
+      '--modal-background': palette.modalBackground,
+      '--modal-header': palette.modalHeader,
+      '--modal-border': palette.modalBorder,
+      '--modal-text': palette.modalText,
+      '--modal-title': palette.modalTitle,
+      '--theme-accent': palette.accent,
+      '--theme-accent-hover': palette.accentHover,
+    };
+
+    Object.entries(properties).forEach(([property, value]) => {
+      this.style.setProperty(property, value);
     });
   }
 }

@@ -5,6 +5,10 @@ const openLink = (x) => {
 const setTheme = (x) => {
   localStorage.setItem('theme', x);
   const theme = localStorage.getItem('theme');
+  document.querySelectorAll('project-card').forEach((card) => {
+    card.setTheme(theme);
+  });
+
   if (theme === '1') {
     $('body, main, form').css('background-color', '#1FA1B8');
     $('#header').css('background-color', '#1fa1b8d3');
