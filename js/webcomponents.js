@@ -88,21 +88,42 @@ class ProjectCard extends HTMLElement {
               background: white;
             }
             .modal-header h2 {
+              min-width: 0;
               margin: 0;
               color: #172a36;
               text-align: left;
             }
-            .modal-close {
+            .modal-actions {
+              display: flex;
               flex: 0 0 auto;
+              gap: 8px;
+            }
+            .repository-link,
+            .modal-close {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              flex: 0 0 auto;
+              min-height: 36px;
               padding: 7px 12px;
               border: 1px solid #49616d;
               border-radius: 4px;
               background: white;
               color: #172a36;
+              font: inherit;
               cursor: pointer;
             }
+            .repository-link {
+              text-decoration: none;
+            }
+            .repository-link:hover,
             .modal-close:hover {
               background: #edf3f5;
+            }
+            .repository-link:focus-visible,
+            .modal-close:focus-visible {
+              outline: 2px solid #167d8d;
+              outline-offset: 2px;
             }
             .modal-body {
               padding: 22px;
@@ -152,7 +173,10 @@ class ProjectCard extends HTMLElement {
         <dialog class="details-modal" aria-labelledby="details-title">
             <div class="modal-header">
                 <h2 id="details-title">${this.getAttribute('projectName')}</h2>
+              <div class="modal-actions">
+                <a class="repository-link" href="${this.getAttribute('github')}" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
                 <button class="modal-close" type="button">Close</button>
+              </div>
             </div>
             <div class="modal-body details-content"></div>
         </dialog>
