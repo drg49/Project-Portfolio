@@ -259,6 +259,23 @@ class ProjectCard extends HTMLElement {
             .modal-body h3 {
               color: var(--modal-title);
             }
+            .modal-body pre {
+              padding: 16px;
+              margin-top: 0px;
+              border-radius: 8px;
+              overflow-x: auto;
+            }
+            .modal-body pre code {
+              font-family: Consolas, Monaco, monospace;
+              font-size: 14px;
+            }
+            .code-highlight {
+              border-radius: 3px;
+              padding: 2px 3px;
+              background-color: #fff1a8;
+              color: #202124;
+              font-weight: 600;
+            }
             .modal-body p {
               height: auto;
               margin: 0;

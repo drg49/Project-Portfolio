@@ -200,9 +200,44 @@
       />
     </template>
     <template id="details-neighborly">
+      <img
+        src="images/neighborly-2.png"
+        alt="Example post for Neighborly application"
+      />
       <p>
-        The Neighborly App is a clone of Nextdoor, a social networking platform for neighborhoods. It allows users to connect with their neighbors, share information, and stay informed about local events and issues. The app is built using the MERN stack (MongoDB, Express, React, Node.js).
+        The Neighborly App was inspired by Nextdoor, a social networking platform for neighborhoods. It allows users to connect with their neighbors, share information, and stay informed about local events and issues. Users can post anonymously or with their real identity.
       </p>
+      <h3>How does it work?</h3>
+      <p>
+        The app is built using the MERN stack (MongoDB, Express, React, Node.js). The first step was finding a dataset online that contained a large list of US and Canadian cities. I needed enough data to include smaller towns and rural areas. The locations are stored in a JSON file on the frontend, making city searches quick and efficient.
+      </p>
+      <br />
+      <img
+        src="images/neighborly-1.png"
+        alt="Example search for Neighborly application"
+      />
+      <br />
+      <p>Since locations are stored statically on the frontend, there isn't a database relationship between locations and posts. There is a SQL table for posts, but not for locations. Locations do not need an ID, since cities + their state should be unique (which can also be confirmed by running a unique function on the JSON dataset). To link a post to a location we include the concatenated location name in the post data. See an example post below from Los Angeles, California:</p>
+      <pre><code>{
+    "_id": "61ff27adc1afbd00151bfee5",
+    "note": "Hello Los Angeles, California!",
+    "username": "drg50",
+  <span class="code-highlight">  "location": "Los AngelesCalifornia"</span>
+}</code></pre>
+    <h3>Would it be better to store the locations in an SQL table?</h3>
+    <p>
+      Static data can be stored in a database, but a database table isn't always necessary. For locations in Neighborly, storing the data in a frontend JSON file was a simpler approach for several reasons:
+      <ul>
+        <li><strong>The data rarely changes.</strong> The list of locations is relatively stable, so it doesn't require frequent database updates or administrative management.</li>
+        <li><strong>The file is relatively small.</strong> The 265 KB JSON file contains approximately 6,000 cities. Keeping this data separate from the database avoids additional queries and reduces backend dependencies.</li>
+        <li><strong>Locations serve as post metadata.</strong> Neighborly uses location data to associate posts with a city and state, rather than managing locations as independent records.</li>
+        <li><strong>The data model is simple.</strong> Locations don't need their own database table because no other tables depend on them, and the application doesn't require database-level relationships between locations and posts.</li>
+      </ul>
+    </p>
+    <img
+      src="images/neighborly-3.jpg"
+      alt="Graphical representation for Neighborly application"
+    />
     </template>
     <template id="details-messenger">
       <p>

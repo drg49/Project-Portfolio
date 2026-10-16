@@ -205,7 +205,7 @@ const projects = [
   },
   {
     description:
-      'Share posts and images with your neighbors in over 3500+ cities in the US & Canada!',
+      'Share posts and images with your neighbors in over 6,000 cities in the US & Canada!',
     giturl: 'https://github.com/drg49/Neighborly-App-Backend',
     image: '../images/neighborlyCover.jpg',
     liveurl: 'https://the-neighborly-app.vercel.app/',
