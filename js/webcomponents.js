@@ -8,7 +8,7 @@ class ProjectCard extends HTMLElement {
     const style = `
         <style>
             .boxcard {
-                width: 350px;
+              width: min(350px, calc(100vw - 40px));
                 text-align: center;
                 border: 1px solid;
                 border-radius: 9px;
@@ -30,14 +30,15 @@ class ProjectCard extends HTMLElement {
                 height: auto;
             }
             .boxcard > a > img {
-                width: 351px;
-                height: 169px;
+              width: 100%;
+              height: auto;
+              aspect-ratio: 351 / 169;
                 object-fit: cover;
                 background-color: black;
             }
             p {
              margin: 0;
-             height: 168px;
+             height: 130px;
              padding: 10px;
              color: white; 
              text-align: left;
@@ -96,8 +97,9 @@ class ProjectCard extends HTMLElement {
             .modal-actions {
               display: flex;
               flex: 0 0 auto;
-              gap: 8px;
+              gap: 14px;
             }
+            .view-link,
             .repository-link,
             .modal-close {
               display: inline-flex;
@@ -113,6 +115,18 @@ class ProjectCard extends HTMLElement {
               font: inherit;
               cursor: pointer;
             }
+            .view-link {
+              border-color: #0969da;
+              background: #0969da;
+              color: white;
+              font-weight: 600;
+              text-decoration: none;
+            }
+            .view-link:hover {
+              border-color: #0550ae;
+              background: #0550ae;
+              color: white;
+            }
             .repository-link {
               gap: 8px;
               border-color: #57606a;
@@ -126,13 +140,35 @@ class ProjectCard extends HTMLElement {
               background: #32383f;
               color: white;
             }
-            .modal-close:hover {
-              background: #edf3f5;
+            .modal-close {
+              border-color: #c9363e;
+              background: #c9363e;
+              color: white;
             }
+            .modal-close:hover {
+              border-color: #a40e26;
+              background: #a40e26;
+              color: white;
+            }
+            .view-link:focus-visible,
             .repository-link:focus-visible,
             .modal-close:focus-visible {
               outline: 2px solid #167d8d;
               outline-offset: 2px;
+            }
+            @media (max-width: 600px) {
+              .modal-header {
+                flex-wrap: wrap;
+                padding: 14px;
+              }
+              .modal-header h2 {
+                flex-basis: 100%;
+              }
+              .modal-actions {
+                width: 100%;
+                flex-wrap: wrap;
+                gap: 12px;
+              }
             }
             .modal-body {
               padding: 22px;
@@ -184,6 +220,7 @@ class ProjectCard extends HTMLElement {
             <div class="modal-header">
                 <h2 id="details-title">${this.getAttribute('projectName')}</h2>
               <div class="modal-actions">
+                <a class="view-link" href="${this.getAttribute('liveurl')}" target="_blank" rel="noopener noreferrer">Demo</a>
                 <a class="repository-link" href="${this.getAttribute('github')}" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub Repository</span></a>
                 <button class="modal-close" type="button">Close</button>
               </div>

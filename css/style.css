@@ -134,13 +134,19 @@ h3 {
 
 main {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   padding-top: 20px;
   margin-bottom: 4px;
   background-color: #1fa1b8;
   transition: 280ms linear;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  width: min(100%, 1160px);
+  margin: 0 auto;
 }
 
 input[type='radio']:hover {

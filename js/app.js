@@ -192,7 +192,7 @@ const setTheme = (x) => {
 const projects = [
   {
     description:
-      'An AI-powered contract analysis platform that uses RAG and vector search to analyze uploaded contracts, identify potential risks, and provide recommendations. Built with React, Flask, PostgreSQL/pgvector, AWS S3, and Google Gemini.',
+      'An AI-powered contract analysis platform. Built with React, Flask, PostgreSQL/pgvector, AWS S3, and Google Gemini.',
     giturl: 'https://github.com/drg49/clause-iq-be',
     image: '../images/clauseiqcover.jpg',
     liveurl: 'https://clause-iq-psi.vercel.app/',
@@ -246,7 +246,7 @@ const projects = [
   },
 ];
 
-const $main = $('main');
+const $main = $('.project-grid');
 projects.forEach((project) => {
   const $div = $('<div>');
   $div.html(
