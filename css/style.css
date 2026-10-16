@@ -80,15 +80,19 @@ a:first-of-type {
     rgba(5, 111, 146, 1) 13.5%,
     rgba(6, 57, 84, 1) 78.6%
   );
-  display: block;
-  height: 292px;
-  padding-top: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  height: 282px;
   transition: 280ms linear;
   text-align: center;
 }
 
 #name {
-  padding-top: 10px;
+  margin: 0;
+  padding-top: 0;
   color: white;
   font-family: 'Fjalla One', sans-serif;
   font-size: 73px;
@@ -107,7 +111,7 @@ a:first-of-type {
 
 #banner p:first-of-type {
   margin-bottom: 0;
-  margin-top: 12px;
+  margin-top: 0;
   font-size: 43px;
 }
 
@@ -503,18 +507,20 @@ form input {
 }
 
 @media screen and (max-width: 425px) {
+  #name {
+    font-size: 44px;
+  }
+
   #turn-blue {
-    height: 217px;
-    padding-top: 26px;
+    height: 202px;
   }
 
   #banner p:first-of-type {
     font-size: 31px;
-    margin-top: 14px;
   }
 
   #main-heading {
-    padding-top: 27px;
+    padding-top: 12px;
   }
   #full-stack {
     text-align: center;

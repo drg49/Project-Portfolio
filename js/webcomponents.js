@@ -50,7 +50,7 @@ const projectCardThemes = {
     cardEnd: '#157241',
     cardBorder: '#48a97b',
     cardText: '#ffffff',
-    detailsTrigger: '#ff7077',
+    detailsTrigger: '#ffffff',
     detailsDivider: '#2da675',
     modalBackground: '#073b2d',
     modalHeader: '#10553e',
