@@ -5,6 +5,8 @@ const projectCardThemes = {
     cardEnd: '#007f72',
     cardBorder: '#087d91',
     cardText: '#ffffff',
+    detailsTrigger: '#ffffff',
+    detailsDivider: '#1fa1b8',
     modalBackground: '#082b3b',
     modalHeader: '#06445b',
     modalBorder: '#187388',
@@ -18,6 +20,8 @@ const projectCardThemes = {
     cardEnd: '#2e02ac',
     cardBorder: '#6848bb',
     cardText: '#ffffff',
+    detailsTrigger: '#ffffff',
+    detailsDivider: '#8250df',
     modalBackground: '#160d2b',
     modalHeader: '#241546',
     modalBorder: '#4b3274',
@@ -31,6 +35,8 @@ const projectCardThemes = {
     cardEnd: '#292600',
     cardBorder: '#8a7900',
     cardText: '#fffbd1',
+    detailsTrigger: '#fffbd1',
+    detailsDivider: '#b39b00',
     modalBackground: '#111111',
     modalHeader: '#252000',
     modalBorder: '#807600',
@@ -44,6 +50,8 @@ const projectCardThemes = {
     cardEnd: '#157241',
     cardBorder: '#48a97b',
     cardText: '#ffffff',
+    detailsTrigger: '#ff7077',
+    detailsDivider: '#2da675',
     modalBackground: '#073b2d',
     modalHeader: '#10553e',
     modalBorder: '#36805f',
@@ -67,6 +75,8 @@ class ProjectCard extends HTMLElement {
               --card-end: #007f72;
               --card-border: #087d91;
               --card-text: #ffffff;
+              --details-trigger-color: #ffffff;
+              --details-divider: #ffffff;
               --modal-background: #082b3b;
               --modal-header: #06445b;
               --modal-border: #187388;
@@ -112,7 +122,7 @@ class ProjectCard extends HTMLElement {
              text-align: left;
             }
             #dropdown {
-              border-top: 1px solid var(--card-border);
+              border-top: 1px solid var(--details-divider);
             }
             .dropdown-content {
                 padding-bottom: 5px;
@@ -122,12 +132,13 @@ class ProjectCard extends HTMLElement {
               padding: 0;
               border: 0;
               background: transparent;
-              color: var(--theme-accent);
+              color: var(--details-trigger-color);
               cursor: pointer;
               font: inherit;
             }
             .details-trigger:hover {
-              color: var(--theme-accent-hover);
+              color: var(--details-trigger-color);
+              text-decoration: underline;
             }
             .details-modal {
               width: min(900px, calc(100vw - 32px));
@@ -331,6 +342,8 @@ class ProjectCard extends HTMLElement {
       '--card-end': palette.cardEnd,
       '--card-border': palette.cardBorder,
       '--card-text': palette.cardText,
+      '--details-trigger-color': palette.detailsTrigger,
+      '--details-divider': palette.detailsDivider,
       '--modal-background': palette.modalBackground,
       '--modal-header': palette.modalHeader,
       '--modal-border': palette.modalBorder,
