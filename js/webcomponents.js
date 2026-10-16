@@ -26,6 +26,10 @@ class ProjectCard extends HTMLElement {
                 color: white;
             }
             img {
+                width: 100%;
+                height: auto;
+            }
+            .boxcard > a > img {
                 width: 351px;
                 height: 169px;
                 object-fit: cover;
@@ -103,6 +107,7 @@ class ProjectCard extends HTMLElement {
             .modal-body {
               padding: 22px;
               overflow-wrap: anywhere;
+              text-align: left;
             }
             .modal-body p {
               height: auto;
