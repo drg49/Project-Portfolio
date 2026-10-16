@@ -67,11 +67,11 @@ class ProjectCard extends HTMLElement {
               max-height: 85vh;
               padding: 0;
               overflow: auto;
-              border: 1px solid #78909c;
+              border: 1px solid #30363d;
               border-radius: 8px;
-              color: #172a36;
-              background: white;
-              box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+              color: #c9d1d9;
+              background: #0d1117;
+              box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
             }
             .details-modal::backdrop {
               background: rgba(0, 0, 0, 0.68);
@@ -85,13 +85,13 @@ class ProjectCard extends HTMLElement {
               justify-content: space-between;
               gap: 16px;
               padding: 16px 22px;
-              border-bottom: 1px solid #d6e0e4;
-              background: white;
+              border-bottom: 1px solid #30363d;
+              background: #161b22;
             }
             .modal-header h2 {
               min-width: 0;
               margin: 0;
-              color: #172a36;
+              color: #f0f6fc;
               text-align: left;
             }
             .modal-actions {
@@ -173,7 +173,11 @@ class ProjectCard extends HTMLElement {
             .modal-body {
               padding: 22px;
               overflow-wrap: anywhere;
+              color: #c9d1d9;
               text-align: left;
+            }
+            .modal-body h3 {
+              color: #f0f6fc;
             }
             .modal-body p {
               height: auto;

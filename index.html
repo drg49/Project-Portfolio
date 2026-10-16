@@ -141,12 +141,12 @@
         identifies potential risks. While a tool like this could be expanded in
         many ways, I focused on the core functionality: identifying risky
         clauses, missing protections, and opportunities for negotiation.
-      </p>
+      </p><br />
       <img
         src="images/clause-iq-1.png"
         alt="Example table for ClauseIQ application"
       />
-      <h3 style="margin-top: 0px">How does it work?</h3>
+      <h3>How does it work?</h3>
       <p>
         ClauseIQ uses a <strong>Retrieval-Augmented Generation</strong> (RAG) architecture. Users
         upload PDF contracts through a React frontend, and a Python Flask
@@ -160,10 +160,13 @@
         on exact keyword matches. These embeddings are stored in PostgreSQL
         using pgvector.
       </p>
+      <br />
       <img
         src="images/clause-iq-2.jpg"
         alt="Diagram of ClauseIQ architecture"
       />
+      <br />
+      <br />
       <p>
         Before we retrieve embeddings from the uploaded contracts, we need to define what we're looking for. While users could eventually customize their searches, ClauseIQ currently uses a set of predefined queries to guide its analysis:
         <ul>
@@ -175,10 +178,13 @@
         </ul>
         Using the same Gemini embedding model we used for the contract chunks, we convert the predefined queries into embeddings. We then use pgvector to compare these query embeddings against the stored contract-chunk embeddings using cosine distance. A smaller distance indicates greater similarity, while a larger distance indicates less similarity. For each query, pgvector ranks the chunks by distance and returns the closest matches first.
       </p>
+      <br />
       <img
         src="images/clause-iq-3.jpg"
         alt="Diagram of ClauseIQ architecture"
       />
+      <br />
+      <br />
       <p>At this step of the background process, we have searched through the uploaded contract and gathered relevant chunks of text needed for our analysis. While users could eventually customize how their results are presented, ClauseIQ uses a predefined format for presenting the results:
         <ul>
           <li>Risk</li>
@@ -187,6 +193,7 @@
         </ul>
       The relevant chunks of text are sent up to the Gemini API with a predefined prompt that instructs the model to analyze the text and generate a summary of the contract's risks, missing protections, and negotiation opportunities. The model's output is then stored in PostgreSQL and made available to the user through the React frontend.
       </p>
+      <br />
       <img
         src="images/clause-iq-4.png"
         alt="Example analysis output for ClauseIQ application"
