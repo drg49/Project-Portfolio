@@ -195,6 +195,7 @@ class ProjectCard extends HTMLElement {
               cursor: pointer;
             }
             .view-link {
+              gap: 8px;
               border-color: var(--theme-accent);
               background: var(--theme-accent);
               color: white;
@@ -303,7 +304,7 @@ class ProjectCard extends HTMLElement {
             <div class="modal-header">
                 <h2 id="details-title">${this.getAttribute('projectName')}</h2>
               <div class="modal-actions">
-                <a class="view-link" href="${this.getAttribute('liveurl')}" target="_blank" rel="noopener noreferrer">Demo</a>
+                <a class="view-link" href="${this.getAttribute('liveurl')}" target="_blank" rel="noopener noreferrer"><i class="fa fa-play-circle" aria-hidden="true"></i><span>Demo</span></a>
                 <a class="repository-link" href="${this.getAttribute('github')}" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub Repository</span></a>
                 <button class="modal-close" type="button">Close</button>
               </div>
