@@ -288,6 +288,32 @@ figcaption {
   color: white;
 }
 
+.modal-close-button {
+  display: inline-flex;
+  min-width: 68px;
+  min-height: 36px;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border: 1px solid #647b84;
+  border-radius: 4px;
+  background: white;
+  color: #18313a;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background: #edf3f5;
+}
+
+.modal-close-button:focus-visible {
+  outline: 2px solid #167d8d;
+  outline-offset: 2px;
+}
+
 .modals.active {
   transform: translate(-50%, -50%) scale(1);
 }
@@ -295,7 +321,7 @@ figcaption {
 .modals-header {
   padding: 10px 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
