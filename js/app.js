@@ -196,7 +196,7 @@ const projects = [
     giturl: 'https://github.com/drg49/clause-iq-be',
     image: '../images/clauseiqcover.jpg',
     liveurl: 'https://clause-iq-psi.vercel.app/',
-    projectName: 'Clause IQ (NEW)',
+    projectName: 'Clause IQ',
     detailsTemplate: 'details-clause-iq',
   },
   {

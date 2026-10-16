@@ -1,11 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daniel's Portfolio</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,10 +29,16 @@
       type="module"
       src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.36/dist/shoelace.js"
     ></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico"/>
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico" />
     <script src="js/webcomponents.js" defer></script>
     <script src="js/app.js" defer></script>
   </head>
@@ -37,15 +47,24 @@
     <div class="container-fluid">
       <div class="row" id="header">
         <div class="col-md-12" id="topbar">
-          <img id="logo" src="images/dgGreenLogo.png" width="95" height="95" alt="green logo with bumblebee">
+          <img
+            id="logo"
+            src="images/dgGreenLogo.png"
+            width="95"
+            height="95"
+            alt="green logo with bumblebee"
+          />
           <nav>
             <li><a href="#banner">Home</a></li>
             <li><a href="#point">About</a></li>
             <li><a href="#contact">Links</a></li>
-            <i data-modal-target="#modal" class="fas fa-bars fa-2x" id="menu-icon"></i>
+            <i
+              data-modal-target="#modal"
+              class="fas fa-bars fa-2x"
+              id="menu-icon"
+            ></i>
           </nav>
         </div>
-        
       </div>
     </div>
     <!-- BANNER -->
@@ -61,25 +80,44 @@
       <div class="row">
         <div class="col-md-12" id="main-heading">
           <h4>Change Theme</h4>
-          <section id="theme-changer" >
+          <section id="theme-changer">
             <div>
-              <label for="blue">Blue</label><br>
-              <input type=radio name="theme" checked="true" id="blue" onclick="setTheme(1)">
+              <label for="blue">Blue</label><br />
+              <input
+                type="radio"
+                name="theme"
+                checked="true"
+                id="blue"
+                onclick="setTheme(1)"
+              />
             </div>
             <div>
-              <label for="dark">Dark</label><br>
-              <input type=radio name="theme" id="dark" onclick="setTheme(2)">
+              <label for="dark">Dark</label><br />
+              <input
+                type="radio"
+                name="theme"
+                id="dark"
+                onclick="setTheme(2)"
+              />
             </div>
             <div>
-              <label for="bee">Bee</label><br>
-              <input type=radio name="theme" id="bee" onclick="setTheme(3)">
+              <label for="bee">Bee</label><br />
+              <input type="radio" name="theme" id="bee" onclick="setTheme(3)" />
             </div>
             <div>
-              <label for="bee">Melon</label><br>
-              <input type=radio name="theme" id="melon" onclick="setTheme(4)">
+              <label for="bee">Melon</label><br />
+              <input
+                type="radio"
+                name="theme"
+                id="melon"
+                onclick="setTheme(4)"
+              />
             </div>
           </section>
-          <h3>All projects displayed below are my individual work. Click on the card to open the link!</h3>
+          <h3>
+            All projects displayed below are my individual work. Click on the
+            card to open the link!
+          </h3>
         </div>
       </div>
     </div>
@@ -96,41 +134,77 @@
     </div>
 
     <template id="details-clause-iq">
-      <p>Project details placeholder for Clause IQ. Replace this with your project HTML.</p>
+      <p>
+        ClauseIQ is an AI-powered platform that analyzes contracts and
+        identifies potential risks. While a tool like this could be expanded in
+        many ways, I focused on the core functionality: identifying risky
+        clauses, missing protections, and opportunities for negotiation.
+      </p>
+      <h2>How does it work?</h2>
     </template>
     <template id="details-neighborly">
-      <p>Project details placeholder for The Neighborly App. Replace this with your project HTML.</p>
+      <p>
+        Project details placeholder for The Neighborly App. Replace this with
+        your project HTML.
+      </p>
     </template>
     <template id="details-messenger">
-      <p>Project details placeholder for Daniel's Messenger. Replace this with your project HTML.</p>
+      <p>
+        Project details placeholder for Daniel's Messenger. Replace this with
+        your project HTML.
+      </p>
     </template>
     <template id="details-neptune">
-      <p>Project details placeholder for Neptune Game Studios. Replace this with your project HTML.</p>
+      <p>
+        Project details placeholder for Neptune Game Studios. Replace this with
+        your project HTML.
+      </p>
     </template>
     <template id="details-piranha">
-      <p>Project details placeholder for Piranha. Replace this with your project HTML.</p>
+      <p>
+        Project details placeholder for Piranha. Replace this with your project
+        HTML.
+      </p>
     </template>
     <template id="details-instant-recipe">
-      <p>Project details placeholder for Instant Recipe. Replace this with your project HTML.</p>
+      <p>
+        Project details placeholder for Instant Recipe. Replace this with your
+        project HTML.
+      </p>
     </template>
 
-    <div style="height: 96px;" id="point"></div>
+    <div style="height: 96px" id="point"></div>
 
     <div class="container-fluid" id="about-section">
       <div class="row" id="about-heading">
         <div class="col-md-12">
-          <h1 id="about">About Me</h2>
+          <h1 id="about">About Me</h1>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12" id="about-flex">
           <article id="about-article">
             <p id="about-p">
-              Hi, I'm Daniel Gavin, a full-stack engineer who builds and ships products from concept to production. I specialize in modern web technologies, cloud infrastructure, and AI-powered applications using Python, React, AWS, Docker, and RAG architectures.<br><br>From building user interfaces, APIs, and databases to deploying applications through automated CI/CD workflows on Vercel and Render, I work across the full software lifecycle.<br><br>If you're looking for an engineer who can take a project from idea to production, let's connect through the contact information in my <a href="#" data-bs-toggle="modal" data-bs-target="#pdfModal" style="text-decoration: underline; font-weight: bold;">resume</a>.
+              Hi, I'm Daniel Gavin, a full-stack engineer who builds and ships
+              products from concept to production. I specialize in modern web
+              technologies, cloud infrastructure, and AI-powered applications
+              using Python, React, AWS, Docker, and RAG architectures.<br /><br />From
+              building user interfaces, APIs, and databases to deploying
+              applications through automated CI/CD workflows on Vercel and
+              Render, I work across the full software lifecycle.<br /><br />If
+              you're looking for an engineer who can take a project from idea to
+              production, let's connect through the contact information in my
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#pdfModal"
+                style="text-decoration: underline; font-weight: bold"
+                >resume</a
+              >.
             </p>
           </article>
           <figure>
-            <img src="images/profile.png" id="about-image"/>
+            <img src="images/profile.png" id="about-image" />
           </figure>
         </div>
       </div>
@@ -141,68 +215,186 @@
         <div class="col-md-12">
           <h1 id="fet">Full Stack Tools</h1>
           <ul id="iconlist">
-            <li class="icon"><img src="/images/copilotlogo.png" alt="Github Copilot Icon" width="150px" style="padding-top: 5px;" title="Github Copilot"></li>
-            <li class="icon"><img src="/images/pythonicon.png" alt="Python Icon" width="162px" style="padding-top: 8px;" title="Python"></li>
-            <li class="icon"><img src="/images/reactlogo.png" alt="React Icon" width="125px" style="padding-top: 6px;" title="React"></li>
-            <li class="icon"><img src="/images/htmlicon.png" alt="HTML Icon" width="70px" title="HTML"></li>
-            <li class="icon"><img src="/images/cssicon.png" alt="CSS Icon" width="50px" title="CSS"></li>
-            <li class="icon"><i class="fab fa-js-square fa-2x" id="jslogo"style="color: yellow; padding-top: 15px; text-shadow: none;" title="JavaScript"></i></li>
+            <li class="icon">
+              <img
+                src="/images/copilotlogo.png"
+                alt="Github Copilot Icon"
+                width="150px"
+                style="padding-top: 5px"
+                title="Github Copilot"
+              />
+            </li>
+            <li class="icon">
+              <img
+                src="/images/pythonicon.png"
+                alt="Python Icon"
+                width="162px"
+                style="padding-top: 8px"
+                title="Python"
+              />
+            </li>
+            <li class="icon">
+              <img
+                src="/images/reactlogo.png"
+                alt="React Icon"
+                width="125px"
+                style="padding-top: 6px"
+                title="React"
+              />
+            </li>
+            <li class="icon">
+              <img
+                src="/images/htmlicon.png"
+                alt="HTML Icon"
+                width="70px"
+                title="HTML"
+              />
+            </li>
+            <li class="icon">
+              <img
+                src="/images/cssicon.png"
+                alt="CSS Icon"
+                width="50px"
+                title="CSS"
+              />
+            </li>
+            <li class="icon">
+              <i
+                class="fab fa-js-square fa-2x"
+                id="jslogo"
+                style="color: yellow; padding-top: 15px; text-shadow: none"
+                title="JavaScript"
+              ></i>
+            </li>
           </ul>
           <ul id="iconlist-2">
-            <li class="icon"><img src="/images/csharpicon.png" alt="C# Icon" width="70px" title="C#"></li>
-            <li class="icon"><img src="/images/railslogo.png" alt="Rails Icon" width="120px" title="Ruby on Rails"></li>
-            <li class="icon"><img src="/images/mongologo.png" alt="Mongo Icon" width="120px" title="MongoDB"></li>
-            <li class="icon"><img src="/images/postgresqlogo.png" alt="PostgreSQL Icon" width="90px" style="padding-top: 7px;" title="PostgreSQL"></li>
-            <li class="icon"><img src="/images/nodejslogo.png" alt="Node JS Icon" width="130px" style="padding-top: 5px;" title="Node.js"></li>
-            
+            <li class="icon">
+              <img
+                src="/images/csharpicon.png"
+                alt="C# Icon"
+                width="70px"
+                title="C#"
+              />
+            </li>
+            <li class="icon">
+              <img
+                src="/images/railslogo.png"
+                alt="Rails Icon"
+                width="120px"
+                title="Ruby on Rails"
+              />
+            </li>
+            <li class="icon">
+              <img
+                src="/images/mongologo.png"
+                alt="Mongo Icon"
+                width="120px"
+                title="MongoDB"
+              />
+            </li>
+            <li class="icon">
+              <img
+                src="/images/postgresqlogo.png"
+                alt="PostgreSQL Icon"
+                width="90px"
+                style="padding-top: 7px"
+                title="PostgreSQL"
+              />
+            </li>
+            <li class="icon">
+              <img
+                src="/images/nodejslogo.png"
+                alt="Node JS Icon"
+                width="130px"
+                style="padding-top: 5px"
+                title="Node.js"
+              />
+            </li>
           </ul>
-        </div>  
+        </div>
       </div>
     </div>
     <div class="container-fluid">
       <div class="row" id="contact-heading">
         <div class="col-md-12" id="contact-row">
-            <h1 id="contact">Links</h1>       
-            <section id="social-media">
-              <a href="https://www.linkedin.com/in/daniel-g-b5b9451a3/" target="_blank"><i class="fab fa-linkedin" id="linked-in" title="LinkedIn"></i></a>
-              <a href="https://github.com/drg49" target="_blank"><i class="fab fa-github" id="github" title="Github"></i></a>
-              <a href="#" data-bs-toggle="modal" data-bs-target="#pdfModal"><i class="fas fa-file-pdf" id="resume" title="Resume"></i></a>
-            </section>
-            <br/>
-            <a href="https://github.com/drg49/Project-Portfolio" target="_blank" style="color: white; text-decoration: underline;">View code for this portfolio</a>
-            <br/>
-            <br/>
+          <h1 id="contact">Links</h1>
+          <section id="social-media">
+            <a
+              href="https://www.linkedin.com/in/daniel-g-b5b9451a3/"
+              target="_blank"
+              ><i class="fab fa-linkedin" id="linked-in" title="LinkedIn"></i
+            ></a>
+            <a href="https://github.com/drg49" target="_blank"
+              ><i class="fab fa-github" id="github" title="Github"></i
+            ></a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#pdfModal"
+              ><i class="fas fa-file-pdf" id="resume" title="Resume"></i
+            ></a>
+          </section>
+          <br />
+          <a
+            href="https://github.com/drg49/Project-Portfolio"
+            target="_blank"
+            style="color: white; text-decoration: underline"
+            >View code for this portfolio</a
+          >
+          <br />
+          <br />
         </div>
       </div>
     </div>
 
     <!-- MODAL -->
-      <div class="modals" id="modal">
-        <div class="modals-header">
-          <button type="button" data-close-button class="modal-close-button">Close</button>
-        </div>
-        <div class="modals-body">
-          <li data-close-button class="close-button"><a href="#banner">Home</a></li>
-          <li data-close-button class="close-button"><a href="#point">About</a></li>
-          <li data-close-button class="close-button"><a href="#contact">Links</a></li>
-        </div>
+    <div class="modals" id="modal">
+      <div class="modals-header">
+        <button type="button" data-close-button class="modal-close-button">
+          Close
+        </button>
       </div>
+      <div class="modals-body">
+        <li data-close-button class="close-button">
+          <a href="#banner">Home</a>
+        </li>
+        <li data-close-button class="close-button">
+          <a href="#point">About</a>
+        </li>
+        <li data-close-button class="close-button">
+          <a href="#contact">Links</a>
+        </li>
+      </div>
+    </div>
 
-      <!-- PDF Modal -->
-      <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="pdfModalLabel">Daniel Gavin Resume</h5>
-              <button type="button" class="modal-close-button" data-bs-dismiss="modal">Close</button>
-            </div>
-            <div class="modal-body">
-              <iframe src="Daniel Gavin Resume 2026.pdf" width="100%" height="500px"></iframe>
-            </div>
+    <!-- PDF Modal -->
+    <div
+      class="modal fade"
+      id="pdfModal"
+      tabindex="-1"
+      aria-labelledby="pdfModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pdfModalLabel">Daniel Gavin Resume</h5>
+            <button
+              type="button"
+              class="modal-close-button"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              src="Daniel Gavin Resume 2026.pdf"
+              width="100%"
+              height="500px"
+            ></iframe>
           </div>
         </div>
       </div>
+    </div>
 
-    <div id="overlay"></div> 
+    <div id="overlay"></div>
   </body>
 </html>
