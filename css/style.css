@@ -66,6 +66,10 @@ a:first-of-type {
   padding-top: 95px;
 }
 
+#point {
+  scroll-margin-top: 96px;
+}
+
 .container-fluid:nth-of-type(2) {
   height: 400px;
 }
