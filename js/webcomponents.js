@@ -247,11 +247,20 @@ class ProjectCard extends HTMLElement {
               }
               .modal-header h2 {
                 flex-basis: 100%;
+                text-align: center;
               }
               .modal-actions {
                 width: 100%;
                 flex-wrap: wrap;
-                gap: 12px;
+                justify-content: space-evenly;
+                gap: 8px;
+              }
+              .view-link,
+              .repository-link,
+              .modal-close {
+                min-height: 32px;
+                padding: 5px 8px;
+                font-size: 0.875rem;
               }
               .chat-flow {
                 padding: 10px;
