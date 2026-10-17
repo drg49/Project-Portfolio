@@ -111,6 +111,8 @@ class ProjectCard extends HTMLElement {
               width: 100%;
               height: auto;
               aspect-ratio: 351 / 169;
+              border-top-left-radius: 8px;
+              border-top-right-radius: 8px;
                 object-fit: cover;
                 background-color: black;
             }
@@ -361,12 +363,9 @@ class ProjectCard extends HTMLElement {
 
         <a href=${this.getAttribute(
           'liveurl',
-        )} target="_blank"><h2>${this.getAttribute('projectName')}</h2></a>
-        <a href=${this.getAttribute(
-          'liveurl',
         )} target="_blank"><img src=${this.getAttribute(
           'img',
-        )} alt="An image of Daniel's website"></a>
+        )} alt="${this.getAttribute('projectName')} project preview"></a>
         <a href=${this.getAttribute(
           'liveurl',
         )} target="_blank"><p>${this.getAttribute('description')}</p></a>
