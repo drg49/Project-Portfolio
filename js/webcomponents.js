@@ -137,6 +137,8 @@ class ProjectCard extends HTMLElement {
               color: var(--details-trigger-color);
               cursor: pointer;
               font: inherit;
+              font-size: 1.1rem;
+              font-weight: 500;
             }
             .details-trigger:hover {
               color: var(--details-trigger-color);
@@ -371,7 +373,7 @@ class ProjectCard extends HTMLElement {
         )} target="_blank"><p>${this.getAttribute('description')}</p></a>
         <div id="dropdown">
         <div class="dropdown-content">
-            <button class="details-trigger" type="button" aria-haspopup="dialog">Open Project Details</button>
+            <button class="details-trigger" type="button" aria-haspopup="dialog">View Project Details</button>
         </div>
         </div>
         <dialog class="details-modal" aria-labelledby="details-title">
