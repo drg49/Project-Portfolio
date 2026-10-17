@@ -216,7 +216,7 @@ const projects = [
     description:
       'A messenger app created with Socket.io and React. Send the link to a friend to begin chatting!',
     giturl: 'https://github.com/drg49/daniels-messenger-backend',
-    image: '../images/dmCover.png',
+    image: '../images/dan-mess-cover.jpg',
     liveurl: 'https://daniels-messenger.vercel.app/',
     projectName: "Daniel's Messenger",
     detailsTemplate: 'details-messenger',
@@ -225,7 +225,7 @@ const projects = [
     description:
       'A portfolio of my Unity 3D projects built with the C# programming language.',
     giturl: 'https://github.com/drg49/Movie-Theater-Game',
-    image: '../images/neptunegamestudios.png',
+    image: '../images/ngscover.jpg',
     liveurl: 'https://neptune-game-studios.vercel.app/',
     projectName: 'Neptune Game Studios',
     detailsTemplate: 'details-neptune',
